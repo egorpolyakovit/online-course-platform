@@ -1,0 +1,145 @@
+section.content article.titlePage h2 {
+    font-size: 20px;
+}
+section.content article.titlePage p.title {
+    padding: 10px 0;
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+section.content article.titlePage  a.btn {
+    display: block;
+    max-width: 135px;
+    margin: 30px auto;
+    padding: 7px 20px 10px 20px;	
+    color: #fff;
+    text-decoration: none;
+    background-color: #4caf50;
+    border: 0;
+    border-radius: 4px;
+    font-weight: 600;
+}
+section.content article.titlePage  a.btn:hover,section.content article.titlePage  a.btn:target {
+	background:green;
+	color:#fcfcfc;
+}
+section.content article.titlePage p.author {
+    font-weight: 600;
+}
+@media (max-width:768px) and (min-width:420px) {
+	section.content article.titlePage h2 {
+		font-size: 20px;
+		max-width: 80% !important;
+		margin-left: auto !important;
+		margin-right: auto !important;
+		zoom: 90% !important;		
+	}
+}
+@media (max-width:800px) and (min-width:799px) {
+	section.content article.titlePage {
+		float: left;
+		display: block;
+		width: 100% !important;
+		max-width: 100% !important;
+		min-height: 420px;
+		margin: 20px auto !important;
+		padding: 120px 0 !important;
+		background-color: #fff;
+		background-image: url('../img/start/vector-io.jpg');
+		background-size: 140px auto !important;
+		background-repeat: no-repeat;
+		background-position: center 4% !important;
+		font-family: 'Open Sans',Arial,sans-serif;
+		vertical-align: top;
+		text-align: center;
+		overflow: hidden;
+	}
+	section.content article.titlePage h2 {
+		font-size: 20px;
+		max-width: 80% !important;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	section.content article.titlePage h2,section.content article.titlePage p.title,section.content article.titlePage p.author {
+		zoom: 90% !important;
+	}
+}
+@media (min-width:768px) {
+	section.content article.titlePage {
+		float: left;
+		display: block;
+		width: 100%;
+		max-width: 650px;
+		min-height: 420px;
+		margin: 20px auto !important;
+		padding: 190px 30px;
+		background-color: #fff;
+		background-image: url('../img/start/vector-io.jpg');
+		background-size: 180px auto;
+		background-repeat: no-repeat;
+		background-position: center 10%;	
+		font-family: 'Open Sans',Arial,sans-serif;
+		vertical-align: top;
+		text-align: center;
+		overflow:hidden;
+	}
+}
+@media (max-width:768px) {
+	section#title {
+		width:100%;
+		min-width:100%;
+		max-width:100%;
+	}
+	section.content article.titlePage {
+		float: left;
+		display: block;
+		width: 100%;
+		max-width: 100%;
+		min-height: 420px;
+		margin: 20px auto !important;
+		padding: 90px 0 30px 0;
+		background-color: #fff;
+		background-image: url(../img/start/vector-io.jpg);
+		background-size: 140px auto;
+		background-repeat: no-repeat;
+		background-position: center 3%;
+		font-family: 'Open Sans',Arial,sans-serif;
+		vertical-align: top;
+		text-align: center;
+		overflow: hidden;
+	}
+	article.titlePage h1 {
+		margin-top: 40px;		
+		zoom: 80%;
+	}
+	section.content article.titlePage h2 {
+		font-size: 20px;
+		zoom: 80%;
+	}
+	section.content article.titlePage p.title {
+		padding: 10px 0;
+		margin: 0;
+		font-size: 18px;
+		font-weight: 600;
+		zoom: 70%;
+	}
+	section.content article.titlePage p.author {
+		font-weight: 600;
+		zoom: 75%;
+		padding-top: 0;
+		margin-top: 0;
+	}
+	section.content article.titlePage a.btn {
+		display: block;
+		max-width: 135px;
+		margin: 20px auto;
+		padding: 7px 20px 10px 20px;
+		color: #fff;
+		text-decoration: none;
+		background-color: #4caf50;
+		border: 0;
+		border-radius: 4px;
+		font-weight: 600;
+		zoom: 80%;
+	}
+}

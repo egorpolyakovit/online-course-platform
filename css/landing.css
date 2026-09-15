@@ -1,0 +1,1697 @@
+/* Скроллинг */
+
+html::-webkit-scrollbar-button,body::-webkit-scrollbar-button,article#landing::-webkit-scrollbar-button ,ul#questions.faq::-webkit-scrollbar-button {
+    background-image: url('');
+    background-repeat: no-repeat;
+    width: 10px;
+    height: 0px
+}
+
+body::-webkit-scrollbar-track,article#landing::-webkit-scrollbar-track,ul#questions.faq::-webkit-scrollbar-track {
+    background-color: #ecedee;
+}
+
+body::-webkit-scrollbar-thumb,article#landing::-webkit-scrollbar-thumb,ul#questions.faq::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+    background-color: #bcbcbc;
+}
+
+body::-webkit-scrollbar-thumb:hover,article#landing::-webkit-scrollbar-thumb:hover,ul#questions.faq::-webkit-scrollbar-thumb:hover {
+    background-color: #aaaaaa;
+}
+
+body::-webkit-resizer,article#landing::-webkit-resizer,ul#questions.faq::-webkit-resizer {
+    background-image: url('');
+    background-repeat: no-repeat;
+    width: 10px;
+    height: 0px
+}
+
+body::-webkit-scrollbar,article#landing::-webkit-scrollbar,ul#questions.faq::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Скроллинг */
+
+article#landing {
+    float: left;
+    display: inline-block;
+    width: 100%;
+    max-width: 100%;
+    height: fit-content;
+    min-height: 100vh;
+    max-height: calc(100vh - 136px);
+    font-family: "Open Sans", Arial, sans-serif;
+    vertical-align: top;
+    overflow-y: scroll;
+}
+div#course.intro {
+    display: block;
+    width: 100%;
+    max-width: 705px;
+    margin: 20px 0 0 20px;
+    background-color: #f8f8f8;
+    background-image: url('../img/landing/bg.jpg');
+    font-family: Open Sans,Arial,sans-serif;
+    border-radius: 5px;
+}
+div#course.intro div.greenBg {
+    display: block;
+    background-color: rgba(66,164,80,0.85);
+    padding: 0;
+    margin: 0;	
+    color: #fff;
+	border-radius: 5px 5px 0 0;	
+}
+div#course.intro div.greenBg i {
+	float: left;
+    display: inline-block;
+    width: 200px;
+    height: 180px;
+    background-image: url('../img/landing/io.png');
+    background-size: 250px 250px;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+div#course.intro div.greenBg h2 {
+	display: inline-block;
+    max-width: 320px;
+    margin: 10px 0 0 0;
+    padding: 30px 0 10px 0;
+    vertical-align: top;
+}
+div#course.intro div.greenBg h2 b {
+    display: block;
+}
+div#course.intro div.greenBg small {
+    display: block;
+    padding-top: 5px;
+    font-size: 18px;
+    font-weight: normal;
+    letter-spacing: 0.02em;
+}
+div.greenBg p {
+    display: inline-block;
+    max-width: 260px;
+    width: 100%;
+    padding-top: 0;
+    margin-top: 0;
+    margin-bottom: 40px;
+    vertical-align: top;
+}
+div.greenBg p em {
+    font-style: normal;
+    display: inline-block;
+    margin-right: 5px;
+    font-size: 15px;
+}
+div.greenBg p span.period {
+    display: inline-block;
+    padding-left: 20px;
+    width: 90px;
+    background-image: url('../img/svg/time-white.svg');
+    background-size: 16px 16px;
+    background-repeat: no-repeat;
+    background-position: 1px 3px;
+    font-size: 15px;
+    font-weight: 600;
+}
+div.lightBg {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 20px;	
+	background: -moz-linear-gradient(45deg,  rgba(242,242,242,1) 0%, rgba(249,249,249,1) 52%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(45deg,  rgba(242,242,242,1) 0%,rgba(249,249,249,1) 52%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(45deg,  rgba(242,242,242,1) 0%,rgba(249,249,249,1) 52%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f2f2', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	border-radius: 0 0 5px 5px;	
+}
+div.lightBg h2 {
+    display: block;
+    margin: 0 0 0 20px;
+    padding: 20px 0 0 20px;
+    font-size: 20px;
+    color: #111;
+    text-shadow: 0 1px 1px #fff;
+}
+div.lightBg p {
+    display: block;
+    padding: 0 0 0 40px;
+    width: 340px;
+    font-size: 15px;
+}
+div.lightBg p.btn a {
+    display: block;
+    width: 190px;
+    height: 30px;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #40a947;
+    border-radius: 100px;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    padding-top: 8px;
+    border: 1px solid green;
+}
+div.lightBg p.btn a:hover,div.lightBg p.btn a:target {
+    background-color:green;
+	border:1px solid green;
+	color:#fcfcfc;
+}
+div.lightBg i {
+    float: right;
+    width: 270px;
+    height: 290px;
+    border: none;
+    vertical-align: top;
+    margin: 30px;
+    background-image: url('../img/landing/bird.png');
+    background-size: 270px 290px;
+}
+div#program.programSlider {
+    display: block;
+    width: 100%;
+    max-width: 705px;
+    margin: 0 0 0 20px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+div#program.programSlider h2.green {
+    display: block;
+    margin-top: 20px;
+	margin-bottom:0;
+    padding: 7px 0px 7px 0px;
+    background-color: rgb(101, 197, 105);
+    border-radius: 3px;
+    font-weight: 550;
+    font-size: 15px !important;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    border-radius: 5px 5px 0 0;
+}
+div#program.programSlider ul#slider, div#program.programSlider ul#slider li, div#program.programSlider ul#slider li img {
+    width: 705px;
+    height: 412px;
+    padding: 0;
+    margin: 0;	
+    list-style: none;
+}
+div#program.contents {
+	float:left;
+    display: block;	
+    width: 705px;
+    margin: 0 0 0 20px;
+    background-color: #ffffff;
+    border-radius: 0 0 5px 5px;
+}
+div#program.contents h3.green {
+    margin-bottom: 0;
+    padding: 7px 0 7px 0;	
+    background-color: #65c569;
+    text-align: center;
+    border-radius: 5px 5px 0 0;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+}
+div.infoBlocks {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding-bottom: 30px;	
+    vertical-align: top;
+}
+div.infoBlocks div.infoBlock {
+    float: left;
+    display: block;
+    width: 100%;
+    height: auto;
+    min-height: 150px;
+    vertical-align: top;
+    border-radius: 5px;
+    box-shadow: 0 2px 3px #d4d4d4;
+	background: rgb(252,252,252); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(252,252,252,1) 0%, rgba(255,255,255,1) 22%, rgba(255,255,255,1) 78%, rgba(244,244,244,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  rgba(252,252,252,1) 0%,rgba(255,255,255,1) 22%,rgba(255,255,255,1) 78%,rgba(244,244,244,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  rgba(252,252,252,1) 0%,rgba(255,255,255,1) 22%,rgba(255,255,255,1) 78%,rgba(244,244,244,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfcfc', endColorstr='#f4f4f4',GradientType=0 ); /* IE6-9 */
+}
+div.infoBlocks div#lectures.infoBlock div.textBlock h3,div.infoBlocks div#practicums.infoBlock div.textBlock h3,div.infoBlocks div#additional.infoBlock div.textBlock h3,div.infoBlocks div#examination.infoBlock div.textBlock h3,div.infoBlocks div#document.infoBlock div.textBlock h3 {
+    float: left;
+	display:block;		
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    font-size: 18px;	
+}
+div.infoBlocks div.infoBlock div.textBlock {
+    float: left;
+    display: inline-block;
+    width: 50%;
+    height: auto;
+    margin: 20px;
+}
+div.infoBlocks div.infoBlock div.textBlock p {
+    float: left;
+	display:block;	
+	margin-top:10px;
+	padding-top:0;	
+    font-size: 14px;
+}
+div.infoBlocks div#examination.infoBlock {
+    min-height: 220px;
+}
+div.infoBlocks div#lectures.infoBlock i {
+    display: inline-block;
+    width: 290px;
+    height: 150px;
+    float: right;
+    border: none;
+    background-image: url('../img/landing/autocad.png');
+    background-size: 290px auto;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    border-radius: 4px 4px 0 0;
+    zoom: 90%;
+    margin: 15px 10px;
+    box-shadow: none;
+}
+div#practicums.infoBlock i {
+    float: right;	
+    display: inline-block;
+    width: 290px;
+    height: 150px;
+    margin: 15px 10px;	
+    border: none;
+    background-image: url('../img/landing/practicums.png');
+    background-size: 290px auto;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    border-radius: 4px 4px 0 0;
+    zoom: 90%;
+    box-shadow: none;
+}
+div#additional.infoBlock i {
+    float: right;	
+    display: inline-block;
+    width: 290px;
+    height: 150px;
+    margin: 15px 10px;	
+    border: none;
+    background-image: url('../img/landing/formats.png');
+    background-size: 240px auto;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    border-radius: 4px 4px 0 0;
+    zoom: 90%;
+    box-shadow: none;
+}
+div#examination.infoBlock i {
+    float: right;
+    display: inline-block;
+    width: 290px;
+    height: 240px;
+    margin: 2% 0 10px;
+    border: none;
+    background-image: url('../img/landing/illustrator-screen.png');
+    background-size: 490px auto;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    border-radius: 4px 4px 0 0;
+    zoom: 90%;
+    box-shadow: none;
+}
+div#document.infoBlock i {
+    float: right;
+    display: inline-block;
+    width: 290px;
+    min-height: 210px;
+    height: 240px;
+    margin: 3% 1% 10px;
+    border: none;
+    background-image: url('../img/landing/frame-border-diploma-preview.png');
+    background-size: 270px 210px;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    border-radius: 4px 4px 0 0;
+    zoom: 80%;
+    box-shadow: none;
+}
+div#faq {
+    display: block;
+    width: 100%;
+    max-width: 705px;
+    min-height: 495px;
+    margin-top: 10px;
+    padding: 0 0 0 10px;
+    background: #fff;
+}
+div#faq h2,div#landing.competencies h2 {
+	float:left;	
+    display: block;
+    width: 100%;	
+    padding-top: 40px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 20px;
+    margin-bottom: 0;
+    font-family: Open Sans,Arial,sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+}
+div#faq.faq p,div#landing.competencies p {
+    display: block;
+	max-width: 520px;
+	margin-top: 10px;	
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 0;
+    font-size: 0.95em;	
+    text-align: center;	
+}
+div#faq input#search {
+    max-width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+ul#questions {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 545px;
+}
+div#faq.faq a.whiteBtn {
+    display: block;
+    margin: 20px auto 20px auto;
+    padding: 4px 0 6px 0;
+    color: #4c4c4c;
+    text-decoration: none;
+    text-transform: none;
+    border: 1px solid #8c8c8c;
+    text-align: center;
+    max-width: 142px;
+    border-radius: 3px;
+    font-size: 15px;
+    font-weight: 600;
+}
+div#faq.faq a.whiteBtn:hover, div#faq.faq a.whiteBtn:target {
+    background-color: #46ac4b;
+    border: 1px solid green;
+    color: #fff;
+}
+div#prices.costOfCourse {
+	display: block;
+    float: left;
+    width: 100%;
+    max-width: 680px;
+    padding: 0 0 0 20px;
+    margin: 20px 10px 0 20px;
+    background: #5caf68;
+    color: #fff;
+    border-radius: 5px;
+}
+div#prices.costOfCourse h2 {
+    width: calc(100% + 20px);
+    margin-top: 0;	
+    margin-left: -20px;
+    padding: 6px 0 6px 0;	
+    background: orange;	
+    font-family: Open Sans,Arial,sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 5px 5px 0 0;	
+}
+div#prices.costOfCourse p {
+    font-size: 15px;
+}
+div#prices.costOfCourse p:first-child {
+	text-align:center;
+}
+div#prices.costOfCourse div.columns div.leftColumn p:first-child {
+    font-weight: 600;
+	text-align:left;
+}
+div#prices.costOfCourse div.columns div.leftColumn ul, div#prices.costOfCourse div.columns div.leftColumn ul li {
+    list-style: none;
+    padding-left: 0;
+    padding-bottom: 10px;
+    max-width: 300px;
+    font-size: 15px;
+}
+div#prices.costOfCourse div.columns div.leftColumn ul li {
+    padding-left: 20px;
+    background-image: url('../img/svg/ok-yellow.svg');
+    background-size: 14px 14px;
+    background-repeat: no-repeat;
+    background-position: 2px 4px;
+}
+div#prices.costOfCourse div.columns div.leftColumn {
+    float: left;	
+    display: inline-block;
+    max-width: 320px;
+}
+div#prices.costOfCourse div.columns div.rightColumn {
+    float: right;
+    width: 300px;
+    height: 250px;
+    vertical-align: top;
+    background-image: url('../img/landing/price-for-course.png');
+    background-size: 300px auto;
+    background-repeat: no-repeat;
+    background-position: top left;
+}
+div#prices.costOfCourse div.columns div.rightColumn span.price {
+    float: left;
+    margin: 24px 0 0 20px;
+    font-weight: 600;
+}
+div#prices.costOfCourse span.timePeriod {
+    width: 100%;
+    display: block;
+    float: left;
+    margin: 170px 0 0 0;
+    padding-left: 30px;
+    background-image: url('../img/svg/time-white.svg');
+    background-size: 14px 14px;
+    background-repeat: no-repeat;
+    background-position: 13px 2px;
+    font-size: 13.5px;	
+}
+div#orderForm {
+    float: left;
+    display: block;
+    width: 100%;
+    max-width: 700px;
+    margin: 0 0 30px 20px;
+    border-radius: 5px;
+}
+div#orderForm h2.green {
+    margin-bottom: 0;	
+    padding: 7px 0 7px 0;
+    border-radius: 4px 4px 0 0;
+    font-size: 16px !important;
+    font-weight: 600;
+}
+div#orderForm div.textIntro {
+    background: #f5f5f5;
+    padding: 5px 20px 5px 40px;
+    border-bottom: 1px solid #dedede;
+    font-size: 15px;
+}
+div.textIntro p {
+    background-image: url('../img/svg/info-green.svg');
+    background-size: 16px 16px;
+    background-position: 0 2px;
+    background-repeat: no-repeat;
+    padding-left: 20px;
+    font-size: 14px;
+    font-weight: 550;
+}
+div.feedbackLogin:first-child, div.feedbackEmail {
+    margin-right: 10px !important;
+    display: inline-block;
+    float: left;
+}
+div.feedbackLogin:first-child {
+    margin-right: 15px !important;
+}
+div.feedbackPhone {
+    float: left;
+    display: inline-block;
+    width: 100%;
+    max-width: 317px;
+    margin-left: 5px;
+}
+form#support.feedback {
+    display: block;
+    margin: 0 0 50px 0;
+    padding: 20px 20px 20px 40px;
+    background-color: #f5f5f5;
+    border-radius: 5px;	
+}
+form#support.feedback input[type=text] {
+    max-width: 300px;
+}
+form#support.feedback div.feedbackEmail {
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+}
+form#support.feedback div.studentAge, form#support.feedback div.paymentMethod, form#support div.educationForm {
+    display: inline-block;
+    width: 310px;
+}
+form#support div.educationForm {
+    margin-right: 8px;
+}
+form#support.feedback input[type=email],div.studentAge select,div.paymentMethod select, form#support div.educationForm select {
+    max-width: 300px;
+}
+form#support.feedback textarea {
+    min-height: 120px;
+    font-family: Open Sans,Arial,sans-serif;
+    font-size: 14px;
+    color: #111;
+    max-width: 620px;
+}
+form#support.feedback div.notice {
+    float: left;
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    padding: 0 0 15px 0;
+}
+form#support.feedback input[type=checkbox] {
+    display: inline-block;
+    float: left;
+    width: 13px;
+    height: 13px;
+    margin: 3px 5px 20px 0;
+}
+form#support.feedback label.checkbox-other {
+    display: block;
+    margin-bottom: 5px;
+    font-family: Open Sans,Arial,sans-serif;
+    font-weight: 600;
+    font-size: 13.5px;
+    color: #333;
+    border: none;
+    float: left;
+}
+form#support.feedback label.checkbox-other a {
+	color:green;
+	text-decoration:none;
+}
+form#support.feedback input.btn {
+    display: block;
+    width: 200px;
+    max-width: 200px;
+    min-height: 36px;
+    margin: 10px 0;
+    padding: 8px 10px 8px 10px;
+    background: #eeeeee;
+    background: -moz-linear-gradient(top, #eeeeee 0%, #e5e5e5 100%);
+    background: -webkit-linear-gradient(top, #eeeeee 0%,#e5e5e5 100%);
+    background: linear-gradient(to bottom, #eeeeee 0%,#e5e5e5 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#e5e5e5',GradientType=0 );
+    font-family: Open Sans,Arial,sans-serif;
+    font-size: 14px;
+    font-weight: 650;
+    color: #3a3a3a;
+    text-decoration: none;
+    vertical-align: top;
+    text-align: center;
+    border-radius: 3px;
+    border: 1px solid #bfbfbf;
+    text-shadow: 0 1px 1px #fff;
+    cursor: pointer;
+}
+form#support.feedback input.btn:hover, form#support.feedback input.btn:target {
+    background-color: #4caf50;
+    background-image: none;
+    background-size: 10px 15px;
+    background-repeat: no-repeat;
+    background-position: 12px 9px;
+    border: 1px solid green;
+    text-shadow: none;
+    color: #fff;
+}
+div#landing.competencies {
+    display: block;
+    width: 100%;
+    max-width: 700px;
+    margin: 0 0 20px 20px;
+}
+
+/* Вкладки компетенций: теория и практика */
+
+div.competencies ul, div.competencies ul li {
+  padding: 0;
+  margin: 0;
+}
+div.competencies ul.tabs {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+    list-style: none;
+    border-bottom: 1px solid #ececec;
+}
+div.competencies ul.tabs li {
+    display: inline-block;
+    background-color: #f3f3f3;
+    border-radius: 4px;
+    width: 150px;
+    margin-right: 5px;
+    text-align: center;
+}
+div.competencies ul.tabs li a {
+    display: inline-block;
+    height: 30px;
+    padding: 0 10px 2px 10px;
+    color: #313131;
+    line-height: 30px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    text-shadow: 0 1px 2px #fff;
+}
+div.competencies ul.tabs li:hover, div.competencies ul.tabs li:target, div.competencies ul.tabs li a:hover, div.competencies ul.tabs li a:target {
+    background: #6dcc75;
+    color: #fff;
+    text-shadow: none;
+}
+div.competencies div.tabs-content {
+	width:640px;
+	height:100px;
+	overflow:hidden;
+}
+div.competencies div.tabs-content ul {
+	height: 120px;
+	overflow: scroll;
+	overflow-y: hidden;
+	list-style: none;	
+}
+div.competencies div.tabs-content ul li {
+	width:638px;
+	height:98px;
+	border: 1px dashed red;
+}
+div.competencies div.tabs-content ul li div {
+    padding: 0;
+}
+
+/* Вкладки компетенций: теория и практика */
+
+div.competenciesChoice {
+    display: block;
+    width: 100%;
+    max-width: 580px;
+    min-height: 50px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+div.competenciesChoice a {
+    display: inline-block;
+    width: 100%;
+    max-width: 220px;
+    margin: 0 10px 10px 0;
+    padding: 20px 0 20px 50px;
+    background: #fff;
+    border: 1px solid #eaeaea;
+    border-radius: 4px;
+    box-shadow: 0px 2px 5px 0px #ddd;
+    color: #111;
+    font-size: 0.95em;
+    font-weight: 550;
+    text-decoration: none;
+}
+div.competencies p.notice a {
+    display: block;
+    font-size: 13px;
+	font-weight:600;
+    text-decoration: none;
+    color: #111;
+    text-align: left;
+    background-image: url('../img/svg/info.svg');
+    background-size: 18px 18px;
+    background-repeat: no-repeat;
+    background-position: 2px 2px;
+    padding-left: 25px;
+    padding-top: 1px;
+}
+div.competencies p.notice a:hover,div.competencies p.notice a:target {
+    color: #4d9950;
+    background-image: url('../img/svg/info-green.svg');	
+}
+div#landing.competencies i {
+    display: block;
+    margin: -20px auto -20px auto;
+    width: 100%;
+    height: 380px;
+    background-image: url('../img/landing/competencies.png');
+    background-size: 80% 80%;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+div#landing.competencies div#theory.competencies h2, div#landing.competencies div#practics.competencies h2 {
+    max-width: calc(100% - 55px);	
+    margin-left: 20px;
+    margin-right: 20px;	
+    margin-bottom: 20px;	
+	padding: 3px 0 6px 0;
+    font-size: 18px;
+    background: #58c160;
+    color: #fff;
+    border-radius: 4px;
+}
+div.competencies ol {
+	padding-top:10px;
+}
+div.competencies ol li {
+    max-width: 95%;	
+    padding-top: 5px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    font-size: 15px;
+}
+div#certificate img.document {
+    display: block;	
+    max-width: 480px;
+    margin: 20px auto 10px auto;
+}
+#lections:not(:target)  {
+	display:none;
+}
+#practicums:not(:target) {
+	display:none;
+}
+#attestation:not(:target) {
+	display:none;
+}
+#lections {
+    position: fixed;
+    top: 61px;
+    left: 251px;
+    display: block;
+    background: #fff;
+    width: 100%;
+    max-width: 725px;
+	height:calc(100vh - 60px);
+	z-index:1000;	
+    visibility: visible;
+}
+#practice {
+    position: fixed;
+    top: 61px;
+    left: 251px;
+	display:block;	
+    background: #fff;
+    width: 100%;
+    max-width: 725px;
+	height:calc(100vh - 60px);	
+	z-index:1000;
+	visibility:visible;	
+}
+#attestation {
+    position: fixed;
+    top: 61px;
+    left: 251px;
+	display:block;	
+    background: #fff;
+    width: 100%;
+    max-width: 725px;
+	height:calc(100vh - 60px);
+	z-index:1000;	
+	visibility:visible;	
+}
+div#lections.theory ul.contents li a, div#practice.practicum ul.contents li a {
+    color: #111;
+    font-size: 13.5px;
+    text-decoration: none;
+    padding-left: 10px;
+}
+div#lections.theory ul.contents li a span, div#lections.practicum ul.contents li a span {
+    padding-right: 10px;
+}
+div#practice.practicum ul.contents li a span {
+    padding-right: 5px;
+    padding-bottom: 25px;
+    vertical-align: top;
+}
+div#lections a.backURL,div#practice a.backURL  {
+    display: block;
+    font-size: 14px;
+    text-align: center;
+    color: #111;
+    background: #f7f7f7;
+    max-width: calc(100% - 80px);
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    text-decoration: none;
+}
+div#practice.practicum ul.contents li {
+	padding: 0 0 15px 0;
+}
+div#practice.practicum ul.contents li a b {
+    display: inline-block;
+    max-width: calc(100% - 122px);
+    line-height: 1.55em;
+}
+div#practice.competencies ol {
+    display: block;
+    max-width: 95%;
+    margin-left: 15px;
+}
+div#practice.competencies ol li {
+	padding-bottom:10px;
+	font-size:14px;
+}
+div#lections.competencies ul.contents li,div#practice.competencies ul.contents li {
+	vertical-align:top;
+}
+ul#questions.faq {
+    max-width: calc(100% - 30px);
+    max-height: calc(100vh - 200px);
+    padding-right: 20px;
+    padding-bottom: 40px;
+    overflow-y: scroll;
+}
+ul#questions.faq li b {
+	color:#111;
+}
+ul#questions.faq li span.answer p {
+    color: #111;
+    font-size: 15px;
+    line-height: 1.5em;
+}
+ul#questions.faq li span.answer:before {
+    display: block;
+    padding-top: 20px;
+    content: 'Ответ преподавателя курса:';
+    font-size: 14px;
+    font-weight: 600;
+	color: #306535;
+}
+@media (min-width:1000px) {
+	div.copyright {
+		display: block;
+		position: fixed;
+		bottom: 0;
+		max-width: 200px;
+		padding: 20px 15px 20px 15px;
+		font-family: Open Sans,Arial,sans-serif;
+		font-size: 10px;
+	}	
+	div.copyright span.copyright, div.copyright span.notice {
+		display: block;
+		padding-bottom: 10px;
+		color: #777;
+		letter-spacing: -0.02em;
+	}
+	div.copyright span.copyright, div.copyright span.notice {
+		display: block;
+		padding-bottom: 10px;
+		color: #777;
+		letter-spacing: -0.02em;
+	}
+}
+@media (max-width:1200px) {
+	section.content {
+		width:100% !important;
+		max-width:100% !important;
+	}
+	div#course.intro,div#program.programSlider,div#program.contents,div#landing.competencies,div#prices.costOfCourse,div#faq.faq,div#orderForm.orderForm {
+		float: none;
+		margin-left: auto !important;
+		margin-right: auto !important;
+	}
+	div#landing.competencies,div#prices.costOfCourse,div#faq,div#orderForm.orderForm {
+		float:none;
+	}
+	div#landing.competencies h2 {
+		float: left;
+		width: 100%;
+		margin-bottom: 10px;
+	}
+	div#prices {
+		min-height: 380px;
+	}
+	footer {
+		display: block;
+		max-width: 100%;
+		width: 100%;
+		height: 40px;
+		position: fixed;
+		left: 0;
+		bottom: 0;
+		background: #fff;
+		border-top: 1px solid #ecedee;
+	}
+	footer div.copyright {
+		display: block;
+		position: fixed;
+		bottom: 0;
+		width: 100%;
+		max-width: 100%;
+		padding: 20px 15px 0 20px;
+		font-family: Open Sans,Arial,sans-serif;
+		font-size: 10px;
+	}
+	div.copyright span.copyright, div.copyright span.notice {
+		width: calc(100% - 30px);
+		display: block;
+		padding-bottom: 3px;
+		color: rgb(119, 119, 119);
+		letter-spacing: -0.02em;
+	}
+	div#orderForm.orderForm {
+		margin-top: 60px;
+		margin-bottom: 140px;
+	}	
+}
+@media (max-width:420px) {
+	form#support.feedback {
+		display: block;
+		margin: 0 0 50px 0;
+		padding: 20px;
+		background-color: #f5f5f5;
+		border-radius: 5px;
+	}	
+	div#orderForm div.textIntro {
+		background: #f5f5f5;
+		padding: 5px 20px 5px 20px;
+		border-bottom: 1px solid #dedede;
+		font-size: 15px;
+	}		
+	div.feedbackLogin:first-child, form#support.feedback div.feedbackEmail, form#support.feedback input[type="text"], form#support.feedback input[type="email"], form#support.feedback select, form#support.feedback textarea {
+		min-width: 100% !important;
+		width: 100% !important;
+		max-width: 100% !important;
+	}	
+	ul#questions li {
+		background-color: #ffffff;
+		padding: 6px 0 6px 0;
+	}
+	ul#questions.faq li b {
+		width: 100%;
+		font-size: 15px;
+		letter-spacing: -0.05em;
+	}
+	ul#questions li, ul#questions.faq li span.answer p {
+		max-width: 100% !important;
+		font-size: 14px;
+		letter-spacing: -0.03em;
+		color: #000;
+	}
+}
+@media (max-width:480px) {
+	a.logo {
+		display: block;
+		position: fixed;
+		top: 7px;
+		left: 20px;
+		width: 200px !important;
+		height: 40px;
+		padding-top: 10px;
+		font-family: 'Open Sans',Arial,sans-serif;
+		font-size: 13px;
+		color: #fff;
+		text-align: center;
+		text-decoration: none;
+		background-image: url('../img/logotype.png');
+		background-size: 250px auto;
+		background-repeat: no-repeat;
+		background-position: -50px 0 !important;;
+	}	
+	nav#wideMenu ul li:last-child a,nav#wideMenu ul li:last-child a:hover,nav#wideMenu ul li:last-child a:target {
+		position: fixed;
+		top: 14px;
+		right: 95px;
+		width: 30px;
+		height: 30px;	
+		padding: 0;				
+		background: none;
+		border: 1px solid transparent;
+		font-size: 0;
+		background-size: 30px 30px;
+		background-image: url('../img/svg/order.svg');
+		background-repeat: no-repeat;
+		background-position: 0 0;
+	}	
+	div#course.intro, div#program.programSlider, div#program.contents, div#landing.competencies, div#prices.costOfCourse, div#faq.faq, div#orderForm.orderForm {
+		border-radius:0 !important;
+	}
+	div#course.intro {
+		display: block;
+		width: 100%;
+		max-width: 100% !important;
+		margin: 0 0 0 20px;
+		background-color: #f8f8f8;
+		background-image: url('../img/landing/bg.jpg');
+		font-family: Open Sans,Arial,sans-serif;
+		border-radius: 0 !important;
+	}
+	div#course.intro div.greenBg i {
+		display:none;
+	}	
+	div#course.intro div.greenBg {
+		border-radius: 0 !important;
+	}	
+	div#course.intro div.greenBg {
+		padding-left: 40px;		
+		border-radius: 0 !important;
+	}
+	div.lightBg i {
+		float: left;
+		width: 100%;
+		height: 290px;
+		border: none;
+		vertical-align: top;
+		margin: 30px;
+		background-image: url(../img/landing/bird.png);
+		background-position: center center;
+		background-size: 270px 290px;
+		background-repeat: no-repeat;
+		margin: 0 auto -30px auto;
+		zoom: 79%;
+	}
+	div.lightBg p {
+		display: block;
+		width: 80% !important;
+		padding: 0px 0px 0px 40px;		
+		font-size: 15px;
+	}
+	div#program.programSlider h2.green {
+		margin-top:0;
+		border-radius:0 !important;
+	}
+	div#program.contents,div#program.contents h3.green {
+		width:100%;
+		border-radius:0 !important;		
+	}
+	div#landing.competencies div#theory.competencies h2, div#landing.competencies div#practics.competencies h2 {
+		max-width: calc(100% - 40px) !important;		
+		margin-left: 20px;
+		margin-right: 20px;
+		padding: 3px 0 6px 0;
+		font-size: 18px;
+		background: #58c160;
+		color: #fff;
+		border-radius: 4px;
+	}
+	div.infoBlocks div#lectures.infoBlock i {
+		display: block;
+		width: 290px;
+		height: 150px;
+		float: none;
+		border: none;
+		background-image: url('../img/landing/autocad.png');
+		background-size: 290px auto;
+		background-repeat: no-repeat;
+		background-position: 0 0;
+		border-radius: 4px 4px 0 0;
+		zoom: 100%;
+		margin: 25px auto 10px auto;
+		box-shadow: none;
+		box-shadow: 0 1px 2px #b7b7b7;
+	}	
+	div#additional.infoBlock i {
+		float: none;
+		display: block;
+		width: 290px;
+		height: 150px;
+		margin: 15px auto 10px auto;
+		border: none;
+		background-image: url('../img/landing/formats.png');
+		background-size: 240px auto;
+		background-repeat: no-repeat;
+		background-position: center center;
+		border-radius: 4px 4px 0 0;
+		zoom: 100%;
+		box-shadow: none;
+	}	
+	div#examination.infoBlock i {
+		float: none;
+		display: block;
+		width: 100%;
+		height: 200px;
+		margin: 5px auto 0 auto;
+		border: none;
+		background-image: url('../img/landing/illustrator-screen.png');
+		background-size: 90% auto;
+		background-repeat: no-repeat;
+		background-position: center center;
+		border-radius: 4px 4px 0 0;
+		zoom: 90%;
+		box-shadow: none;
+	}
+	div#document.infoBlock i {
+		float: none;
+		display: block;
+		width: 100%;
+		min-height: 210px;
+		height: 240px;
+		margin: 20px auto 0 auto;
+		border: none;
+		background-image: url(../img/landing/frame-border-diploma-preview.png);
+		background-size: 320px auto;
+		background-repeat: no-repeat;
+		background-position: center center;
+		border-radius: 4px 4px 0 0;
+		zoom: 80%;
+		box-shadow: none;
+	}	
+	div.infoBlocks div.infoBlock div.textBlock {
+		float: left;
+		display: inline-block;
+		width: calc(100% - 40px) !important;
+		height: auto;
+		margin: 20px;
+	}	
+	div#faq h2, div#landing.competencies h2 {
+		zoom:70%;
+	}	
+	div#faq.faq p, div#landing.competencies p {
+		display: block;
+		max-width: 95% !important;
+		margin-top: 10px;
+		margin-left: auto;
+		margin-right: auto;
+		padding-top: 0px;
+		font-size: 0.95em;
+		text-align: center;
+	}	
+	div.competenciesChoice a {
+		display: block !important;
+		width: 100%;
+		max-width: 220px;
+		margin: 0 auto 20px auto !important;
+		padding: 20px 0 20px 50px;
+		background: #fff;
+		border: 1px solid #eaeaea;
+		border-radius: 4px;
+		box-shadow: 0px 2px 5px 0px #ddd;
+		color: #111;
+		font-size: 0.95em;
+		font-weight: 550;
+		text-decoration: none;
+	}
+	div#landing.competencies div#theory.competencies h2, div#landing.competencies div#practics.competencies h2 {
+		zoom:90%;
+	}
+	div#certificate img.document {
+		display: block;
+		max-width: 90% !important;
+		margin: 20px auto 10px;
+	}
+	div#landing.competencies i {
+		display: block;
+		margin: -20px auto -20px auto !important;
+		width: 100% !important;
+		height: 300px !important;
+		background-image: url('../img/landing/competencies.png');
+		background-size: contain;
+		background-position: center center !important;
+		background-repeat: no-repeat;
+	}	
+	div#prices {
+		min-height: 100vh;
+	}		
+	div#prices.costOfCourse {
+		height: 130vh;		
+		padding-top:0;		
+		margin-left:0;
+		background: rgb(92, 175, 104) !important;	
+	}
+	div#prices.costOfCourse h2 {
+		width: 100%;
+		border-radius: 0;
+	}
+	div#prices.costOfCourse p {
+		max-width: 95%;
+		font-size: 15px;
+	}		
+	div#prices.costOfCourse div.columns div.leftColumn,div#prices.costOfCourse div.columns div.rightColumn {
+		float: none;
+		display: block !important;
+		max-width: 100% !important;
+		margin-left: auto !important;
+		margin-right: auto !important;
+	}
+	div#prices.costOfCourse div.columns div.leftColumn ul, div#prices.costOfCourse div.columns div.leftColumn ul li {
+		list-style: none;
+		padding-bottom: 10px;
+		max-width: calc(100% - 30px);
+		font-size: 15px;
+	}	
+	div#prices.costOfCourse div.columns div.leftColumn ul li {
+		padding-left:20px;
+	}
+	ul#questions li {
+		max-width: calc(100% - 30px) !important;
+		background-color: #ffffff;
+		padding: 6px 0 6px 0;
+	}
+	div#orderForm h2.green {
+		border-radius:0;
+	}
+	form#support.feedback input[type="text"], form#support.feedback input[type="email"], form#support.feedback select {
+		min-width: 300px;
+		width: 300px;
+		max-width: 300px;
+	}
+	div.feedbackLogin:first-child,form#support.feedback div.feedbackEmail {
+		width: calc(100% - 5px);
+		margin-right: 15px !important;
+	}	
+	div.feedbackPhone {
+		margin-left:0 !important;
+	}
+	form#support.feedback textarea {
+		min-height: 120px;
+		font-family: Open Sans,Arial,sans-serif;
+		font-size: 14px;
+		color: #111;
+		max-width: calc(100% - 5px) !important;
+	}	
+	form#support.feedback input[type="checkbox"] {
+		display: inline-block;
+		float: left;
+		width: 13px;
+		height: 13px;
+		margin: 3px 5px 40px 0px;
+	}		
+	footer {
+		height:75px !important;
+	}
+}
+@media (max-width:480px) and (min-width:479px){
+	footer {
+		height: 45px !important;
+	}
+}
+@media (max-width:640px) and (min-width:481px) {	
+	a.logo {
+		display: block;
+		position: fixed;
+		top: 7px;
+		left: 20px;
+		width: 200px !important;
+		height: 40px;
+		padding-top: 10px;
+		font-family: 'Open Sans',Arial,sans-serif;
+		font-size: 13px;
+		color: #fff;
+		text-align: center;
+		text-decoration: none;
+		background-image: url(../img/logotype.png);
+		background-size: 250px auto;
+		background-repeat: no-repeat;
+		background-position: -50px 0;
+	}
+	div#program.contents,div#program.contents h3.green {
+		width:100%;
+		border-radius:0 !important;		
+	}	
+	div#landing.competencies div#theory.competencies h2, div#landing.competencies div#practics.competencies h2 {
+		max-width: calc(100% - 40px) !important;		
+		margin-left: 20px;
+		margin-right: 20px;
+		padding: 3px 0 6px 0;
+		font-size: 18px;
+		background: #58c160;
+		color: #fff;
+		border-radius: 4px;
+	}	
+	div.infoBlocks div#lectures.infoBlock i {
+		display: block;
+		width: 290px;
+		height: 150px;
+		float: none;
+		border: none;
+		background-image: url('../img/landing/autocad.png');
+		background-size: 290px auto;
+		background-repeat: no-repeat;
+		background-position: 0 0;
+		border-radius: 4px 4px 0 0;
+		zoom: 100%;
+		margin: 25px auto 10px auto;
+		box-shadow: none;
+		box-shadow: 0 1px 2px #b7b7b7;
+	}	
+	div#additional.infoBlock i {
+		float: none;
+		display: block;
+		width: 290px;
+		height: 150px;
+		margin: 15px auto 10px auto;
+		border: none;
+		background-image: url('../img/landing/formats.png');
+		background-size: 240px auto;
+		background-repeat: no-repeat;
+		background-position: center center;
+		border-radius: 4px 4px 0 0;
+		zoom: 100%;
+		box-shadow: none;
+	}	
+	div#examination.infoBlock i {
+		float: none;
+		display: block;
+		width: 100%;
+		height: 200px;
+		margin: 5px auto 0 auto;
+		border: none;
+		background-image: url('../img/landing/illustrator-screen.png');
+		background-size: 90% auto;
+		background-repeat: no-repeat;
+		background-position: center center;
+		border-radius: 4px 4px 0 0;
+		zoom: 90%;
+		box-shadow: none;
+	}	
+	div#document.infoBlock i {
+		float: none;
+		display: block;
+		width: 100%;
+		min-height: 210px;
+		height: 240px;
+		margin: 20px auto 0 auto;
+		border: none;
+		background-image: url(../img/landing/frame-border-diploma-preview.png);
+		background-size: 320px auto;
+		background-repeat: no-repeat;
+		background-position: center center;
+		border-radius: 4px 4px 0 0;
+		zoom: 80%;
+		box-shadow: none;
+	}		
+	div.infoBlocks div.infoBlock div.textBlock {
+		float: left;
+		display: inline-block;
+		width: calc(100% - 40px) !important;
+		height: auto;
+		margin: 20px;
+	}	
+	div#faq h2, div#landing.competencies h2 {
+		zoom:70%;
+	}
+	div#faq.faq p, div#landing.competencies p {
+		display: block;
+		max-width: 95% !important;
+		margin-top: 10px;
+		margin-left: auto;
+		margin-right: auto;
+		padding-top: 0px;
+		font-size: 0.95em;
+		text-align: center;
+	}
+	div.competenciesChoice a {
+		display: block !important;
+		width: 100%;
+		max-width: 220px;
+		margin: 0 auto 20px auto !important;
+		padding: 20px 0 20px 50px;
+		background: #fff;
+		border: 1px solid #eaeaea;
+		border-radius: 4px;
+		box-shadow: 0px 2px 5px 0px #ddd;
+		color: #111;
+		font-size: 0.95em;
+		font-weight: 550;
+		text-decoration: none;
+	}
+	div#landing.competencies div#theory.competencies h2, div#landing.competencies div#practics.competencies h2 {
+		zoom:90%;
+	}
+	div#certificate img.document {
+		display: block;
+		max-width: 90% !important;
+		margin: 20px auto 10px;
+	}	
+	div#landing.competencies i {
+		display: block;
+		margin: -20px auto -20px auto !important;
+		width: 100% !important;
+		height: 300px !important;
+		background-image: url('../img/landing/competencies.png');
+		background-size: contain;
+		background-position: center center !important;
+		background-repeat: no-repeat;
+	}
+	div#prices {
+		min-height: 100vh;
+	}
+	div#prices.costOfCourse {	
+		padding-top:0;
+		margin-left:0;
+		background: rgb(92, 175, 104) !important;	
+	}
+	div#prices.costOfCourse h2 {
+		width:100%;
+	}
+	div#prices.costOfCourse p {
+		max-width: 95%;
+		font-size: 15px;
+	}	
+	div#prices.costOfCourse div.columns div.leftColumn,div#prices.costOfCourse div.columns div.rightColumn {
+		float: left;
+		display: block !important;
+		max-width: 100% !important;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	ul#questions li {
+		max-width: calc(100% - 30px) !important;
+		background-color: #ffffff;
+		padding: 6px 0 6px 0;
+	}
+	div.feedbackLogin:first-child,form#support.feedback div.feedbackEmail {
+		width: calc(100% - 5px);
+		margin-right: 15px !important;
+	}
+	div.feedbackPhone {
+		margin-left:0 !important;
+	}
+	form#support.feedback textarea {
+		min-height: 120px;
+		font-family: Open Sans,Arial,sans-serif;
+		font-size: 14px;
+		color: #111;
+		max-width: calc(100% - 5px) !important;
+	}
+	form#support.feedback input[type="checkbox"] {
+		display: inline-block;
+		float: left;
+		width: 13px;
+		height: 13px;
+		margin: 3px 5px 40px 0px;
+	}	
+}
+@media (max-width:640px) and (min-width:639px){
+	div#course.intro,div#program.programSlider,div#program.programSlider h2 {
+		margin-top:0 !important;	
+		border-radius:0 !important;	
+	}
+	div#course.intro div.greenBg {
+		border-radius:0;
+	}
+	div.infoBlock div.textBlock h3 {
+		display: block;
+		float: left !important;
+		max-width: 100%;
+		width: 100% !important;			
+		margin-left: auto;
+		margin-right: auto;
+		text-align:center !important;		
+	}
+	div.infoBlocks div.infoBlock div.textBlock p {
+		display: block;
+		float: none;
+		max-width: 75%;
+		margin-left: auto;
+		margin-right: auto;
+		padding-top: 30px;
+	}
+	div.infoBlocks div#examination.infoBlock div.textBlock p:last-child {
+		padding-top:0;
+	}
+	div#landing.competencies p, div#landing.competencies i {
+		max-width:520px !important;
+		margin-top:20px !important;
+		margin-left:auto !important;
+		margin-right:auto !important;
+		margin-bottom:20px !important;
+	}
+	form#support.feedback div.feedbackLogin:first-child, form#support.feedback div.studentAge, form#support.feedback div.feedbackEmail, form#support.feedback div.feedbackPhone {
+		width:calc(50% - 20px);
+		float:left;
+	}
+	form#support.feedback div.studentAge, form#support.feedback div.paymentMethod, form#support div.educationForm {
+		display: inline-block;
+		width: 50%;
+		margin-right: 0;		
+	}	
+	form#support.feedback div.feedbackLogin:first-child,form#support.feedback div.feedbackEmail {
+		margin-right: 20px !important;
+	}	
+	form#support.feedback div.paymentMethod {
+		float:right;
+	}
+	form#support.feedback input[type=email], div.studentAge select, div.paymentMethod select, form#support div.educationForm select, form#support div.paymentMethod select {
+		width: 265px !important;
+	}
+	form#support.feedback textarea {
+		max-width: calc(100% - 20px) !important;		
+		min-height: 120px;
+		font-family: Open Sans,Arial,sans-serif;
+		font-size: 14px;
+		color: #111;
+	}	
+}
+@media (max-width:700px) {
+	nav#wideMenu {
+		display:block;		
+	}
+	nav#wideMenu ul li:not(:last-child) {
+		display:none;
+	}
+	nav#wideMenu ul li::last-child {
+		display:inline-block;
+	}
+	div#program.contents,div#program.contents h3.green {
+		width:100%;
+		border-radius:0 !important;		
+	}
+	div#landing.competencies div#theory.competencies h2, div#landing.competencies div#practics.competencies h2 {
+		max-width: calc(100% - 40px) !important;		
+		margin-left: 20px;
+		margin-right: 20px;
+		padding: 3px 0 6px 0;
+		font-size: 18px;
+		background: #58c160;
+		color: #fff;
+		border-radius: 4px;
+	}	
+}
+@media (max-width:768px) and (min-width:767px) {
+	a.logo {
+		display: block;
+		position: fixed;
+		top: 7px;
+		left: 20px;
+		width: 200px;
+		height: 40px;
+		padding-top: 10px;
+		font-family: 'Open Sans',Arial,sans-serif;
+		font-size: 13px;
+		color: #fff;
+		text-align: center;
+		text-decoration: none;
+		background-image: url('../img/logotype.png');
+		background-size: 250px auto;
+		background-repeat: no-repeat;
+		background-position: -50px 0 !important;
+	}
+	nav#wideMenu {
+		display: block;
+		position: fixed;
+		top: 0;
+		left: 240px !important;
+		width: 100%;
+		max-width: 700px;
+	}
+	div#program.contents, div#program.contents h3.green {
+		width: calc(100% - 28px) !important;
+		margin-left:auto;
+		margin-right:auto;		
+		border-radius: 5px 5px 0 0 !important;
+	}	
+	div.infoBlocks {
+		display: block;
+		width: calc(100% - 28px) !important;
+		height: auto;
+		padding-bottom: 30px;
+		vertical-align: top;
+		margin-left: auto;
+		margin-right: auto;
+	}	
+	div#program.contents h3.green {
+		border-radius:5px 5px 0 0 !important;
+	}
+	div#prices.costOfCourse {
+		padding-top:0;
+		border-radius:5px;
+	}
+	div#prices.costOfCourse h2 {
+		width: calc(100% + 20px);
+		margin-top: 0;
+		margin-left: -20px;
+		padding: 6px 0 6px 0;
+		background: orange;
+		font-family: Open Sans,Arial,sans-serif;
+		font-size: 20px;
+		font-weight: 600;
+		text-align: center;
+		border-radius:5px;		
+	}
+	form#support.feedback input[type=text], form#support.feedback input[type=email], form#support.feedback select {
+		width: 300px;
+		max-width: 300px;
+		height: 40px;
+		padding-right: 0;
+		margin-left: 0;
+	}	
+	div.feedbackPhone {
+		margin-left:0;
+	}
+	div.feedbackLogin:first-child, div.feedbackEmail {
+		width: 50%;
+		margin-right: 14px !important;
+	}	
+}
+@media (min-width:768px) {
+	div#landing.competencies h2 {
+		float: left;
+		width: 100%;		
+		padding-top: 40px;
+		padding-bottom: 10px;
+	}	
+}
+@media (max-width:780px) {
+	nav#wideMenu ul li:nth-child(1),nav#wideMenu ul li:nth-child(2),nav#wideMenu ul li:nth-child(3) {
+		display:none;
+	}
+	div#program.contents,div#program.contents h3.green {
+		width:100%;
+		border-radius:0 !important;		
+	}	
+	div#landing.competencies div#theory.competencies h2, div#landing.competencies div#practics.competencies h2 {
+		max-width: calc(100% - 40px) !important;		
+		margin-left: 20px;
+		margin-right: 20px;
+		padding: 3px 0 6px 0;
+		font-size: 18px;
+		background: #58c160;
+		color: #fff;
+		border-radius: 4px;
+	}
+}
+@media (max-width:860px) and (min-width:760px) {
+	nav#wideMenu ul li:nth-child(2) {
+		display: inline-block !important;
+	}
+	nav#wideMenu ul li:last-child {
+		margin-left: 0;
+		padding-left: 0;
+	}		
+	nav#wideMenu ul li:last-child a {
+		margin-left: 5px;
+	}
+}
+@media (max-width:860px) and (min-width:701px) {
+	nav#wideMenu {
+		display: inline-block;
+	}
+	nav#wideMenu ul li:nth-child(2), nav#wideMenu ul li:nth-child(3), nav#wideMenu ul li:nth-child(5) {
+		display: none;
+	}
+	nav#wideMenu ul li:first-child, nav#wideMenu ul li:last-child {
+		display: inline-block;
+	}
+}
+@media (min-width:800px) and (max-width:1400px) {
+	nav#wideMenu ul li:nth-child(5) {
+		display: none;
+	}	
+}

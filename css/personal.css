@@ -1,0 +1,668 @@
+section#personal.content {
+    padding: 0;
+    background: #f1f1f1;
+}
+article#personal {
+    min-height: calc(100vh - 80px);
+    padding: 0;
+    background-color: #f1f1f1;
+    overflow: hidden;
+}
+div.studentPage {
+    display: block;
+    width: 100%;
+    max-width: 744px;
+    margin: 0;
+    padding: 0;
+	background: RGBA(255,255,255,0.5);
+    border-radius: 0 0 4px 4px;
+}
+div.adsFixedMenu {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    height: 36px;
+    box-shadow: 0 1px 2px #bfbfbfdd;
+    background: #ffffff;
+}
+div.adsFixedMenu ul.studentMenu{
+    display: block;	
+    width: calc(100% - 25px);
+    height: 32px;	
+    padding: 5px 5px 5px 20px;
+    margin: 0;
+    list-style: none;	
+}
+div.adsFixedMenu ul.studentMenuli {
+	display:inline-block;
+	margin-right:15px;
+}
+div.adsFixedMenu ul.studentMenuli a {
+	font-family:'Open Sans',Arial,sans-serif;
+	font-size:0.85em;
+	color:#111;
+	text-decoration:none;
+}
+div.adsFixedMenu ul.studentMenuli a:hover,div.adsFixedMenu ul.studentMenuli a:target, div#audio div.audioTrack a.downloadAudio:hover, div#audio div.audioTrack a.downloadAudio:target {
+	color:#d4224e;
+}
+div.studentContent {
+	display: block;
+    width: calc(100% - 40px);
+    min-height: 100%;
+    padding: 20px;
+    border-radius: 0 0 4px 4px;
+    overflow: hidden;
+}
+div.studentContent div#targetAuditory,div.studentContent div#banners, div.studentContent div#logotypes, div.studentContent div#video, div.studentContent div#audio, div.studentContent div#pressReleases, div.studentContent div#adsMessages  {
+    background: #fff;
+    width: 100%;
+    height: auto;
+    min-height: 160px;
+    padding: 0;
+    border-radius: 5px;
+    box-shadow: 0 1px 2px #d4d4d4;
+}
+div.studentContent div#targetAuditory h2, div.studentContent div#banners h2, div.studentContent div#logotypes h2, div.studentContent div#video h2, div.studentContent div#audio h2, div.studentContent div#pressReleases h2, div.studentContent div#adsMessages h2 {
+    padding: 5px 0 7px 20px;	
+    background: #d4224e;
+    font-size: 0.95em;
+    font-weight: 550;
+    color: #fff;
+    border-radius: 3px 3px 0 0;
+}
+div.studentContent div#targetAuditory p {
+    display: block;
+    width: calc(100% - 38px);
+    padding: 00 20px 0 36px;
+    margin: 0 0 5px 0;
+    font-size: 0.9em;
+    background-image: url(../img/svg/ok.svg);
+    background-size: 12px 12px;
+    background-repeat: no-repeat;
+    background-position: 20px 6px;
+}
+div.studentContent div#targetAuditory p a {
+    color: #111;
+    font-weight: 550;
+    text-decoration: none;
+}
+div.studentContent div#targetAuditory p:hover, div.studentContent div#targetAuditory p:target {
+    background-image: url(../img/svg/ok-green.svg);
+}
+div.studentContent div#targetAuditory a.interests,div.studentContent a.downloadAll,div#pressReleases a.addPressRelease {
+    display: block;
+    margin: 20px 0 0 0;
+    padding: 5px 0 7px 0;
+    border-top: 1px solid #eaeaea;
+    color: #797979;
+    text-decoration: none;
+    font-size: 0.85em;
+	font-weight:550;
+    text-align: center;
+    cursor: pointer;	
+}
+div.studentContent div#targetAuditory p a:hover,div.studentContent div#targetAuditory p a:target,div.studentContent div#targetAuditory a.interests:hover, div.studentContent div#targetAuditory a.interests:target, div#pressReleases a.addPressRelease:hover, div#pressReleases a.addPressRelease:target, div.studentContent a.downloadAll:hover, div.studentContent a.downloadAll:target {
+    background: #f9f9f9;
+    color: #d4224e;
+}
+div#pressReleases a.pr:hover,div#pressReleases a.pr:target {
+    color: #d4224e;
+}
+div.studentContent div#targetAuditory ul.interests {
+    display: none;
+}
+div.studentContent div#banners ul.banners, div.studentContent div#logotypes ul.logotypes {
+    list-style: none;
+    display: block;
+    padding: 0 20px 15px 20px;
+}
+div.studentContent div#logotypes ul.logotypes {
+    display: block;
+    width: calc(100% - 40px);
+    max-width: 768px;
+    margin: 0;
+    padding-top: 5px;
+}
+div.studentContent div#banners ul.banners li {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    margin: 0 0 5px;
+    border: 1px solid #ddd;
+    background: #808080;	
+    border-radius: 5px;
+}
+div.studentContent div#banners form {
+    display: block;
+    background: #f7f7f7;
+    padding-top: 10px;
+    margin-bottom: -20px;
+}
+ul li a.download {
+    position: relative;
+    display: block;
+    margin: -26px 0 0 0;
+    padding: 4px 0 4px 0;		
+    color: RGBA(255,255,255,0.85);
+    text-align: center;
+    font-size: 12px;
+    font-weight: 550;
+    text-shadow: 1px 0px 3px #555;
+    text-decoration: none;
+    line-height: 1.5em;
+    border-radius: 0 0 3px 4px;
+    background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 1%, rgba(0,0,0,0.65) 100%);
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 1%,rgba(0,0,0,0.65) 100%);
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 1%,rgba(0,0,0,0.65) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 );
+}
+ul li a.download:hover,ul li a.download:target {
+	color:#fff;
+	background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.41) 15%, rgba(0,0,0,0.73) 61%, rgba(0,0,0,0.73) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.41) 15%,rgba(0,0,0,0.73) 61%,rgba(0,0,0,0.73) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.41) 15%,rgba(0,0,0,0.73) 61%,rgba(0,0,0,0.73) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#ba000000',GradientType=0 ); /* IE6-9 */
+}
+ul li a.imgView:hover img, ul li a.imgView:target img {
+    opacity: 0.7;
+}
+div.studentContent div#logotypes ul.logotypes li {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    margin: 0 2px 6px 0;
+    background: #808080;
+    border-radius: 5px;
+    box-shadow: 0 1px 2px #9a9a9a;
+    overflow: hidden;
+}
+div.studentContent div#logotypes {
+    display: block;	
+    min-height: 285px;
+    height: auto;
+}
+ul.logotypes li a.imgView {
+    width: 100px;
+    height: 100px;
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+ul.logotypes li a.imgView img.logoPreview {
+    width: 100px;
+    height: 100px;
+}
+div.studentContent div#video h2 {
+    margin-bottom: 0;
+}
+div#video div.youTube h3 {
+    display: block;
+    font-size: 0.95em;
+    background: #f3f3f3;
+    padding: 6px 0 7px 20px;
+    margin: 0;
+}
+div#video div.youTube h3 small {
+    float: right;
+    margin-right: 20px;
+    padding-left: 15px;	
+    color: #d4224e;
+    font-weight: 550;
+    background-image: url(../img/svg/red-time.svg);
+    background-size: 12px 12px;
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+div#video div.youTube a {
+    display: block;
+    color: #111;
+    font-size: 0.85em;
+    font-weight: 550;
+    text-align: center;
+    text-decoration: none;
+    padding: 5px 0 6px 0;
+    background: #eaeaea;
+    border-top: 1px solid #fcfcfc;
+    border-bottom: 1px solid #fff;
+}
+div#video div.youTube a:hover,div#video div.youTube a:target {
+	background:#d4224e;
+	color:#fff;
+}
+div#audio div.audioTracks {
+    display: block;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+div#audio div.audioTrack {
+    display: inline-block;
+    background: #f1f3f4;
+    border-radius: 4px;
+    margin: 0 0 10px 10px;
+}
+div#audio div.audioTrack h3 {
+    display: block;
+    margin: 10px 0 0 0;
+    padding: 0 0 0 20px;	
+    font-family: 'Open Sans',Arial,sans-serif;
+    font-size: 0.9em;
+    font-weight: 550;
+}
+div#audio div.audioTrack h3 small {
+    float: right;
+    width: 40px;	
+    margin-right: 10px;
+    padding-left: 20px;
+    font-size: 11px;	
+    color: #4a4a4a;	
+    background-image: url(../img/svg/gray-time.svg);
+    background-size: 10px 10px;
+    background-repeat: no-repeat;
+    background-position: 8px 7px;
+}
+div#audio div.audioTrack a.downloadAudio {
+    display: block;
+    padding: 5px 0 7px 0;	
+    font-size: 0.8em;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+    text-align: center;
+    border-top: 1px solid #ddd;
+}
+div.audioTrack a.downloadAudio:hover, div#audio div.audioTrack a.downloadAudio:target {
+    background-color: #ececec;
+}
+div#pressReleases ul.pressReleases {
+    display: block;
+    list-style: none;
+    padding: 0;
+    margin: 0 0 0 20px;
+    min-height: 60px;
+}
+div#pressReleases ul.pressReleases li {
+    margin-left: 20px;
+    padding-left: 0;
+    list-style: square;
+    color: #bfbfbf;
+}
+div#pressReleases a.pr {
+    display: block;
+    margin: 10px 20px 10px -5px;
+    padding: 0;
+    color: #111;
+    font-weight: bold;
+    font-size: 0.9em;
+    text-decoration: none;
+}
+div.adsMessage form#adsText {
+    display: block;
+    width: calc(100% - 40px);
+    height: auto;
+    min-height: 320px;
+    padding: 5px 20px 20px 20px;
+    vertical-align: top;
+}
+div.adsMessage form#adsText label {
+    display: block;
+    font-size: 0.82em;
+    font-weight: 550;
+    background: #f1f1f1;
+    border-radius: 3px 3px 0 0;
+    border: 1px solid #ddd;
+    text-align: left;
+    padding-left: 10px;
+    color: #666;
+}
+div.adsMessage form#adsText textarea {
+    width: 100%;
+    min-height: 4em;
+    margin-top: -1px;
+    margin-bottom: 15px;
+	padding: 10px 15px 10px 10px;		
+    border: 1px solid #ddd;
+    border-radius: 0 0 3px 3px;
+    text-align: left;
+    line-height: 1.5em;
+    font-family: Arial;
+    font-size: 0.83em;
+    background: #fcfcfc;
+	overflow-x:hidden;
+	overflow-y:scroll;
+}
+div.adsMessage form#adsText input[type=submit],div.adsMessage form#adsText a.cancel,div#addURL:target.pressRelease div.buttons input[type=submit], div#addURL:target.pressRelease div.buttons a.cancel {
+	display:inline-block;
+	min-width: 120px;
+	height:35px;
+	cursor: pointer;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+	margin-right: 10px;
+    margin-bottom: 30px;	
+    padding: 0 15px 0 15px;
+    color: #5d5d5d;
+    background: -webkit-gradient(linear,left top,left bottom,from(#fff),to(#eaeaea));
+    background: linear-gradient(#fff,#eaeaea);
+    border-radius: 3px;
+    border: 1px solid #9a9a9a;
+	font-size: 0.85em;
+    font-weight: 700;
+    text-shadow: 0 1px 1px #fff;
+    line-height: 11px;
+	text-decoration:none;
+}
+div.adsMessage form#adsText input[type=submit]:hover,div.adsMessage form#adsText input[type=submit]:target,div.adsMessage form#adsText a.cancel:hover,div.adsMessage form#adsText a.cancel:target,div#addURL:target.pressRelease div.buttons input[type=submit]:hover,div#addURL:target.pressRelease div.buttons input[type=submit]:target, div#addURL:target.pressRelease div.buttons a.cancel:hover,div#addURL:target.pressRelease div.buttons a.cancel:target {
+    background:#eaeaea;
+	color:#5d5d5d;
+}
+div.adsMessage form#adsText div.buttons {
+    display: block;
+    width: 100%;
+    height: 40px;
+    vertical-align: top;
+}
+div.adsMessage form#adsText div.buttons a.cancel {
+    max-height: 33px;
+    padding: 0;	
+    line-height: 1.1em;
+    vertical-align: top;
+    font-weight: 550;
+    color: #464646;
+}
+
+div#dropdown {
+    width: 100%;
+    display: block;
+    height: auto;
+    vertical-align: top;
+}
+div#dropdown ul, div#dropdown ul li {
+    padding: 0;
+    background: #fbfbfb;
+    list-style: none;	
+}
+ul#interests li {
+    display: inline-block;
+    width: 100%;
+    max-width: 200px;
+    text-align: left;
+    margin: 10px 0 10px 30px;
+}
+div#dropdown ul li a {
+    display: block;	
+    padding: 0 3px 3px 10px;	
+    font-family: Open Sans,Arial,sans-serif;
+    font-size: 0.85em;
+    font-weight: 500;
+    color: #111;
+    text-decoration: none;
+    background-color: none;
+}
+div#dropdown ul li a b {
+    display: inline-block;
+    padding-top: 1px;	
+    font-size: 0.95em;	
+    font-weight: 550;
+}
+div#dropdown ul li a span {
+    float: right;
+    min-width: 40px;
+    margin-right: 0;
+    padding-top: 2px;
+    padding-right: 5px;
+    font-size: 0.95em;
+    font-weight: 550;
+    text-align: right;
+}
+div#dropdown ul#interests {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    border-radius: 0 0 4px 4px;
+    border-top: 1px solid #eaeaea;	
+}
+ul#interests li {
+    display: inline-block;
+    width: 100%;
+    max-width: 240px;
+    margin: 0 0 0 20px;
+    text-align: left;
+    border-radius: 0;
+    border: 1px solid #f3f3f3;
+    background-color: #ffffff !important;
+}
+ul#interests li:hover, ul#interests li:target, ul#interests li:hover a, ul#interests li:target a {
+    background-color: #efefef;
+}
+ul#interests span.subLine {
+    display: block;
+    background: #f5f5f5;
+    margin: -9px 0 20px 0;
+    height: 30px;
+    border-bottom: 1px solid #eaeaea;
+}
+ul#interests span.subLine i {
+    float: left;
+    display: inline-block;
+    font-style: normal;
+    margin: 2px 15px 0 30px;
+    font-size: 13px;
+    font-weight: 550;
+    color: #555;
+}
+span.subLine a.sorting {
+    float: left;
+    font-size: 0.8em !important;
+    display: inline-block;
+    margin-top: 2px;
+    margin-right: 15px;
+}
+span.subLine a.closeIt {
+    float: right;
+    display: inline-block;
+    width: 76px;	
+    min-width: 70px;	
+    height: 27px;	
+    padding: 0 2px 2px 10px;
+    font-size: 0.8em !important;	
+    line-height: 2.3em;
+    border-bottom: 1px solid #f5f5f5;
+    background-color: #ececec;	
+    background-image: url(../img/svg/close.svg);
+    background-size: 11px 11px;
+    background-repeat: no-repeat;
+    background-position: 90% 10px;
+    opacity: 0.7;
+}
+
+div#dropdown ul#interests li a:hover,div#dropdown ul#interests li a:target, div#dropdown ul#interests span.subLine a.sorting:hover, div#dropdown ul#interests span.subLine a.sorting:target,div#dropdown ul#interests span.subLine a.closeIt:hover,div#dropdown ul#interests span.subLine a.closeIt:target {
+	color:#d4224e;
+	opacity:1;
+}
+div#dropdown ul#interests span.subLine a.closeIt:hover,div#dropdown ul#interests span.subLine a.closeIt:target {
+    background-image: url(../img/svg/close-green.svg);
+}
+
+div.adsMessage form#adsText textarea::-webkit-scrollbar-button {
+    background-image: url('');
+    background-repeat: no-repeat;
+    width: 5px;
+    height: 0px;
+}
+
+div.adsMessage form#adsText textarea::-webkit-scrollbar-track{
+    background-color: #ecedee;
+}
+
+div.adsMessage form#adsText textarea::-webkit-scrollbar-thumb{
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+    background-color: #bcbcbc;
+}
+
+div.adsMessage form#adsText textarea::-webkit-scrollbar-thumb:hover{
+    background-color: #aaaaaa;
+}
+
+div.adsMessage form#adsText textarea::-webkit-resizer{
+    background-image: url('');
+    background-repeat: no-repeat;
+    width: 4px;
+    height: 0px;
+}
+div#banners a.addBanners {
+    display: block;
+    max-width: 165px;	
+    margin: -10px auto 30px auto;
+    padding: 5px 0 5px 0;	
+    font-size: 0.85em;
+    color: #797979;
+    text-decoration: none;
+    font-weight: 550;
+    border: 1px solid #e6e6e6;
+    text-align: center;
+    border-radius: 4px;
+    background: #f9f9f9;
+}
+div#banners a.addBanners:hover,div#banners a.addBanners:target {
+    border: 1px solid #e6e6e6;
+    background: #e6e6e6;
+}
+div#studentMenu {
+    display: block;
+    width: 100%;
+    min-height: 200px;
+    border-radius: 4px;
+    box-shadow: none;
+}
+div#studentMenu a {
+    display: inline-block;
+    width: 100%;
+    margin: 0 10px 10px 0;
+    padding: 20px 0 20px 50px;	
+    background: #fff;
+    border: 1px solid #eaeaea;
+    border-radius: 4px;
+    box-shadow: 0px 2px 5px 0px #ddd;
+    color: #111;
+    font-size: 0.95em;
+    font-weight: 550;
+    text-decoration: none;
+}
+div#studentMenu a:hover, div#adsMenu a:target {
+    background-color: #fcfcfc;
+    color: #37923a;
+}
+div#studentMenu a.calendar {
+    background-image: url(../img/svg/calendar.svg);
+    background-size: 25px 25px;
+    background-position: 15px 18px;
+    background-repeat: no-repeat;
+}
+div#studentMenu a.calendar:hover,div#studentMenu a.calendar:target {
+    background-image: url('../img/svg/calendar-green.svg');
+}
+div#studentMenu a.payment {
+    background-image: url('../img/svg/wallet.svg');
+    background-size: 28px 28px;
+    background-position: 15px 16px;
+    background-repeat: no-repeat;
+}
+div#studentMenu a.payment:hover,div#studentMenu a.payment:target {
+    background-image: url('../img/svg/wallet-green.svg');
+}
+div#studentMenu a.course {
+    background-image: url('../img/svg/course.svg');
+    background-size: 27px 27px;
+    background-position: 15px 17px;
+    background-repeat: no-repeat
+}
+div#studentMenu a.course:hover,div#studentMenu a.course:target {
+    background-image: url('../img/svg/course-green.svg');
+}
+div#studentMenu a.practicums {
+    background-image: url('../img/svg/practicum-code.svg');
+    background-size: 26px 26px;
+    background-position: 15px 17px;
+    background-repeat: no-repeat;
+}
+div#studentMenu a.practicums:hover,div#studentMenu a.practicums:target {
+    background-image: url('../img/svg/practicum-code-green.svg');
+}
+div#studentMenu a.video {
+    background-image: url('../img/svg/video.svg');
+    background-size: 26px 26px;
+    background-position: 15px 17px;
+    background-repeat: no-repeat;
+}
+div#studentMenu a.video:hover,div#studentMenu a.video:target {
+    background-image: url('../img/svg/video-green.svg');
+}
+div#studentMenu a.examination {
+    background-image: url('../img/svg/examination.svg');
+    background-size: 30px 30px;
+    background-position: 13px 16px;
+    background-repeat: no-repeat;
+}
+div#studentMenu a.examination:hover,div#studentMenu a.examination:target {
+    background-image: url('../img/svg/examination-green.svg');
+}
+div#studentMenu a.diploma {
+    background-image: url('../img/svg/diploma.svg');
+    background-size: 28px 28px;
+    background-position: 13px 17px;
+    background-repeat: no-repeat;
+}
+div#studentMenu a.diploma:hover,div#studentMenu a.diploma:target {
+    background-image: url('../img/svg/diploma-green.svg');
+}
+div#addURL:target.pressRelease div.buttons {
+    display: block;
+    width: 100%;
+    padding: 10px 0 0 0;
+}
+div#addURL:target.pressRelease div.buttons a.cancel {
+    display: inline-block;
+    min-width: 80px;
+    width: 80px;
+    max-width: 80px;
+    margin-top: 0;
+    padding: 10px 18px 3px 18px;
+    height: 20px;
+    text-align: center;
+    align-items: none;
+    -webkit-box-pack: none;
+}
+
+@media (max-width:640px) {
+	div#studentMenu h2 {
+		max-width: calc(100% - 19px);
+		width: 100%;
+		margin-bottom: 0;
+		border-radius: 3px 3px 0 0;
+	}
+	div#studentMenu a {
+		max-width: calc(100% - 50px);
+		margin: 0 0 -1px 0;
+	}
+	div#studentMenu a:first-child {
+		border-radius: 0 0 3px 3px;
+	}
+}
+@media (min-width:640px) {
+	div#studentMenu a {
+		display: inline-block;
+		width: 40%;
+		max-width: 40%;
+		margin-right: 1%;
+	}
+}

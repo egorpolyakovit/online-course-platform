@@ -1,0 +1,654 @@
+section#lecture.content, article#lecture.description {
+    height: 100%;	
+    background: #d8d8d8;
+}
+article#lecture.description {
+    display: block;
+    width: calc(100% - 250px);
+    max-width: calc(100% - 250px);
+    height: 100vh;
+    padding-bottom: 0;
+    margin-bottom: 0;	
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+article#lecture.description div.lecture {
+    width: calc(100% - 40px);
+    height: auto;
+    padding: 20px 20px 60px 20px;
+    overflow: visible;
+}
+div#lectureOne.introSlide {
+    max-height: 650px;
+    padding: 30px;
+    border-radius: 4px;
+    color: #000;
+    background-color: #f0f4f5;
+    text-align: center;
+    border: 1px solid #ededed;
+    box-shadow: 0 1px 1px #b3b3b3;
+}
+div#lectureOne.introSlide div.lectureTitle {
+    display: block;
+    max-width: 640px;
+    margin: -100px auto 20px auto;
+	background: -moz-linear-gradient(top,  rgba(240,244,245,0) 1%, rgba(240,244,245,1) 57%, rgba(240,244,245,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  rgba(240,244,245,0) 1%,rgba(240,244,245,1) 57%,rgba(240,244,245,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  rgba(240,244,245,0) 1%,rgba(240,244,245,1) 57%,rgba(240,244,245,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f0f4f5', endColorstr='#f0f4f5',GradientType=0 ); /* IE6-9 */
+    zoom: 100%;	
+}
+div#lectureOne.introSlide div.lectureInfo {
+    float: left;
+    display: block;
+    width: 100%;
+}
+div#lectureOne.introSlide div.lectureIllustration {
+    display: block;
+    width: 100%;
+    max-width: 320px;
+    height: 373px;
+    margin: 5% auto 0 auto;
+    background-color: #f0f4f5;
+    background-image: url('../img/lectures/lecture-one/bird-title.png');
+    background-size: auto 100%;
+    background-position: center left;
+    background-repeat: no-repeat;
+    border: 1px solid #efefef;
+    border-radius: 4px;
+    zoom: 70%;
+}
+div#lectureOne.introSlide span.indicator {
+    float: left;
+    display: inline-block;
+    max-width: 200px;
+    margin: 0 0 10px 2px;
+    font-weight: 550;
+}
+div#lectureOne.introSlide h1 {
+    font-size: 2em;
+    font-weight: 1000;
+    text-transform: uppercase;
+    letter-spacing: 0.034em;
+}
+div#lectureOne.introSlide p.lectureAuthor {
+    float: right;
+    display: inline-block;
+    max-width: 150px;
+    padding-top: 0;
+    margin: 0 auto;
+    font-size: 14px;
+    font-weight: 550;
+    zoom: 110%;
+}
+div#lectureOne.introSlide p.lectureAuthor a {
+	color:#111;
+	text-decoration:none;
+}
+div#lectureOne.introSlide p.lectureAuthor a:hover,div#lectureOne.introSlide p.lectureAuthor a:target {
+	color:green;
+}
+div#lectureOne.introSlide span.lectureDate, div#lectureOne.introSlide span.lectureLocation, div#lectureOne.introSlide span.lectureLevel {
+    display: inline-block;
+    width: auto;
+    min-height: 1em;
+    height: auto;
+    margin: 0;
+    padding: 0 30px;
+    font-size: 13px;
+    font-weight: 550;
+}
+div#lectureOne.introSlide div.addInfo {
+    display: block;
+    width: 100%;
+    margin: 10% auto 30px auto;
+}
+div#lectureOne.introSlide a.btn {
+    display: block;
+    width: 200px;
+    height: 30px;
+	margin: 80px auto 40px auto;
+    padding: 8px 0 1px 0;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #08a6ef;
+    background: rgb(135,224,253);
+    background: -moz-linear-gradient(top, rgba(135,224,253,1) 0%, rgba(86,193,247,1) 5%, rgba(7,166,239,1) 100%);
+    background: -webkit-linear-gradient(top, rgba(135,224,253,1) 0%,rgba(86,193,247,1) 5%,rgba(7,166,239,1) 100%);
+    background: linear-gradient(to bottom, rgba(135,224,253,1) 0%,rgba(86,193,247,1) 5%,rgba(7,166,239,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#87e0fd', endColorstr='#07a6ef',GradientType=0 );
+}
+div#lectureOne.introSlide a.btn:hover,div#lectureOne.introSlide a.btn:target {
+	background:#07a6ef;	
+	background-color:#07a6ef;
+	color:#ececec;
+}
+div#contentSlide, div.textSlide {
+    display: block;
+    min-height: 450px;
+    padding: 20px 40px;
+    margin: 40px 0 0 0;
+    background: #fdfdfd;
+    border-radius: 5px;
+    box-shadow: 0 1px 1px #b3b3b3;
+}
+section.content article.description div.textSlide p {
+	font-size:15px;
+}
+div#contentSlide h2,div.textSlide h2 {
+    zoom: 140%;
+}
+section.content article.description p, div.textSlide p {
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 15px;
+    line-height: 1.55em;	
+}
+section.content div#contentSlide p.intro {
+	font-size:15px;
+	font-weight:600;
+}
+article.description div#contentSlide ul.contents, article.description div#contentSlide ul.contents li {
+    background: #fff;
+    text-align: left;
+    padding-left: 0;
+}
+article.description div#contentSlide ul.contents li {
+    overflow: visible;
+    padding-left: 20px;
+    margin-left: 1px;
+}
+section.content article.description ol.contents li a {
+    font-weight: 600;
+    color: #000;
+    text-decoration: none;
+}
+section.content article.description ol li ul, section.content article.description ol li ul li {
+    margin-top: 5px;
+    padding-left: 0;
+    margin-left: 10px;
+}
+section.content article.description img.contentsIllustration {
+    position: relative;
+    float: right;
+    display: inline-block;
+    max-width: 400px;
+    margin: 0 4% 0 4%;
+}
+section.content article.description ol.contents {
+    display: inline-block;	
+    max-width: 450px;
+	margin-top:0;
+}
+section.content article.description ol.contents li b,section.content article.description ol.contents li small {
+    padding-top: 5px;
+    display: block;
+    line-height: 1.45em;
+}
+section.content article.description img#recommendedLiterature.contentsIllustration {
+	max-width:350px;
+}
+section.content article.description ol.contents li a:hover,section.content article.description ol.contents li a:target {
+	color:green;
+}
+table.tableOne {
+    max-width: 650px;
+    margin-bottom: 10px;	
+    margin-left: auto;
+    margin-right: auto;
+}
+section.content article.description div.textSlide p.ok,div.contentSlide.textSlide ul.ok li {
+    display: block;	
+    margin-bottom: 5px;	
+    padding-left: 18px;
+    background-image: url('../img/svg/ok-green.svg');
+    background-size: 12px 12px;
+    background-repeat: no-repeat;
+    background-position: 1px 7px;
+}
+div.contentSlide.textSlide p.illustration {
+    display: block;
+    width: 100%;
+    max-width: 650px;
+    text-align: center;	
+}
+div.contentSlide.textSlide p.illustration img {
+	display: block;
+    max-width: 100%;
+    margin: 0 auto 10px auto;
+}
+div.contentSlide.textSlide ul.ok, div.contentSlide.textSlide ul.ok li {
+    list-style: none;
+    padding: 0 0 20px 10px;
+    font-size: 15px;
+}
+div.contentSlide.textSlide ul.ok {
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0;	
+}
+div.contentSlide.textSlide ul.ok li strong, div.contentSlide.textSlide ul.ok li span {
+    display: block;
+    padding-bottom: 5px;
+}
+section.content article.description div.textSlide p.ok, div.contentSlide.textSlide ul.ok li {
+    display: block;
+    margin-bottom: 0;
+    padding-left: 16px !important;
+    background-image: url('../img/svg/ok-green.svg');
+    background-size: 12px 12px;
+    background-repeat: no-repeat;
+    background-position: 0 5px;
+}
+section.content article.description div.textSlide ol.technology {
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+}
+section.content article.description div.textSlide ol.technology li {
+    padding-bottom: 10px;
+    font-size: 15px;
+    line-height: 1.55em;
+}
+section.content article.description div.textSlide table.formats tr td {
+    padding-top: 0;
+    margin-top: 0;
+    vertical-align: top;
+}
+section.content article.description div.textSlide table.formats tr td p {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    vertical-align: top;
+}
+section.content article.description div.textSlide table.formats tr td p b {
+    display: block;
+    padding-top: 5px;
+}
+section.content article.description div.textSlide p span {
+    font-size: 13px;
+    font-weight: 600;
+}
+section.content article.description div.textSlide div.columns {
+    display: block;
+    width: 100%;
+    max-width: 650px;	
+    margin-left: auto;
+    margin-right: auto;
+    vertical-align: top;
+    text-align: left;
+}
+section.content article.description div.textSlide div.columns div.column {
+    display: inline-block;
+    width: 200px;
+    vertical-align: top;
+}
+section.content article.description div.textSlide div.columns div.column:nth-child(2) {
+	margin-right:30px;
+}
+section.content article.description div.textSlide div.columns div.column h3 {
+    font-size: 15px;
+    letter-spacing: -0.02em;
+    text-align: left;
+}
+section.content article.description h2, section.content article.description h3 {
+	display:block;
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 18px;	
+    text-align: center;
+}
+table.formats {
+    max-width: 575px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;	
+}
+table.formats tr:first-child td {
+    padding-bottom: 15px;
+}
+section.content article.description div.textSlide div.columns div.column ul.ok li a,section.content article.description div.textSlide p a {
+    font-weight: 600;
+    color: #111;
+    text-decoration: none;
+}
+section.content article.description div.textSlide div.columns div.column ul.ok li a:hover,section.content article.description div.textSlide div.columns div.column ul.ok li a:target,section.content article.description div.textSlide p a:hover,section.content article.description div.textSlide p a:target {
+	color:green;
+}
+div.subNavigation {
+    background: #fff;
+    position: fixed;
+    bottom: 0;
+    left: 251px;
+    width: 100%;
+    max-width: 1238px;
+    height: 55px;
+}
+div.subNavigation a {
+    display: inline-block;
+    width: 100%;
+    max-width: 33%;
+    height: 100%;
+    padding-top: 17px;
+    color: #111;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    text-align: center;
+}
+div.subNavigation a:hover,div.subNavigation a:target {
+	color:green;
+}
+@media (min-width:768px) {
+	div.bottomGrayCorner {
+		position: fixed;
+		bottom: 45px;
+		left: 251px;
+		display: block;
+		width: calc(100% - 448px);
+		height: 30px;
+		background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(232,232,232,1) 46%, rgba(216,216,216,1) 79%, rgba(216,216,216,1) 100%);
+		background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(232,232,232,1) 46%,rgba(216,216,216,1) 79%,rgba(216,216,216,1) 100%);
+		background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(232,232,232,1) 46%,rgba(216,216,216,1) 79%,rgba(216,216,216,1) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#d8d8d8',GradientType=0 );
+		opacity: 0.5;
+	}	
+}
+@media (max-width:768px) {
+	div#lectureOne.introSlide div.lectureTitle {
+		display: block;
+		max-width: 480px;
+		margin: -100px auto 20px auto;
+		background: -moz-linear-gradient(top, rgba(240,244,245,0) 1%, rgba(240,244,245,1) 57%, rgba(240,244,245,1) 100%);
+		background: -webkit-linear-gradient(top, rgba(240,244,245,0) 1%,rgba(240,244,245,1) 57%,rgba(240,244,245,1) 100%);
+		background: linear-gradient(to bottom, rgba(240,244,245,0) 1%,rgba(240,244,245,1) 57%,rgba(240,244,245,1) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f0f4f5', endColorstr='#f0f4f5',GradientType=0 );
+		zoom: 100%;
+		text-align: center;
+	}
+	div.introSlide h1 {
+		font-size: 2em;
+		font-weight: 1000;
+		text-transform: uppercase;
+		letter-spacing: 0.034em;
+		padding-left: 0;
+		padding-right: 0;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 40px;
+		padding-bottom: 0;
+		zoom:75%;
+	}
+	div#lectureOne.introSlide a.btn {
+		margin-top:40px !important;
+	}
+	div#lectureOne.introSlide div.lectureInfo {
+		float: left;
+		display: block;
+		width: 100%;
+		max-width: 420px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	div#lectureOne.introSlide span.indicator {
+		float: none;
+		display: inline-block;
+		max-width: 50%;
+		margin: 0 0 10px 2px;
+		font-weight: 550;
+		text-align:left;
+	}
+	div#lectureOne.introSlide span.indicator, div#lectureOne.introSlide p.lectureAuthor {
+		width: 50%;
+		zoom: 90%;
+	}
+	div#lectureOne.introSlide p.lectureAuthor {
+		text-align:right;
+	}
+	section#lecture.content, article#lecture.description {
+		width: 100%;
+		min-width: 100%;
+		max-width: 100%;
+		min-height: 100vh;
+		height: 100%;
+		background: #d8d8d8;
+		padding-bottom: 0;
+	}
+	article#lecture.description {
+		margin-left: 0;
+	}	
+	article#lecture.description div.lecture {
+		width: calc(100% - 35px);
+		height: auto;
+		min-height: 100%;
+		padding: 20px 20px 0 20px;
+		margin-left: 0;		
+		overflow: visible;
+	}
+	section.content article.description ol.contents,section.content article.description div.textSlide ol.technology li {
+		min-width: 100%;
+		width: 100%;
+		max-width: 100%;
+		padding-right: 0;
+	}
+	section.content article.description div.textSlide div.columns div.column, section.content article.description div.textSlide div.columns div.column p, section.content article.description div.textSlide div.columns div.column ul.ok, section.content article.description div.textSlide div.columns div.column ul.ok li {
+		width: 100%;
+		min-width: 100%;
+		max-width: 100%;
+		margin-bottom: 0;
+		padding-bottom: 5px;
+	}
+	section.content article.description div.textSlide div.columns div.column p small {
+		padding: 0;
+		margin: 0;		
+		font-weight: 600;
+		font-size: 15px;
+	}
+	section.content article.description div.textSlide div.columns div.column p:first-child {
+		margin-top:0;
+		padding-top:0;
+	}
+	section.content article.description div.textSlide div.columns div.column ul.ok {
+		margin-top:0;
+		padding-top:0;
+		margin-bottom:10px;
+	}
+	section.content article.description img.contentsIllustration {
+		float:none;
+	}
+	div.bottomGrayCorner {
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		display: block;
+		width: 100%;
+		height: 100px;
+		background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(232,232,232,1) 46%, rgba(216,216,216,1) 79%, rgba(216,216,216,1) 100%);
+		background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(232,232,232,1) 46%,rgba(216,216,216,1) 79%,rgba(216,216,216,1) 100%);
+		background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(232,232,232,1) 46%,rgba(216,216,216,1) 79%,rgba(216,216,216,1) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#d8d8d8',GradientType=0 );
+		opacity: 0.5;
+		z-index:10;
+	}			
+	div#pcView.subNavigation {
+		display:none;
+	}
+	div#mobileView.subNavigation {
+		position: fixed;
+		left: calc(50% - 125px);
+		right: calc(50% - 125px);
+		bottom: 20px;
+		z-index: 100;
+		max-width: 250px;		
+		height: 46px;
+		padding: 4px 5px 0 0;		
+		border-radius: 100px;
+		box-shadow: 0 3px 5px #ddd;
+		vertical-align: top;
+	}
+	div.subNavigation a {
+		display: inline-block;
+		width: 100%;
+		max-width: 32%;
+		height: 100%;
+		padding-top: 17px;
+		color: #111;
+		text-decoration: none;
+		font-weight: 600;
+		font-size: 15px;
+		text-align: center;
+	}
+	div.subNavigation a span.hidden {
+		display:none;
+	}
+	div#mobileView.subNavigation a.home {
+		position: relative;
+		display: inline-block;
+		width: 24px;
+		height: 24px;
+		margin: 6px 10px 24px 20px;
+		padding: 0;
+		border: none;
+		background-image: url('../img/svg/home.svg');
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: 24px 24px;
+	}
+	div#mobileView.subNavigation a.home:hover,div#mobileView.subNavigation a.home:target {
+		position: relative;
+		display: inline-block;
+		width: 24px;
+		height: 24px;
+		margin: 6px 10px 24px 20px;
+		padding: 0;
+		border: none;
+		background-image: url('../img/svg/home-green.svg');
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: 24px 24px;		
+	}
+	div#mobileView.subNavigation a.listing {
+		position: relative;
+		display: inline-block;
+		width: 24px;
+		height: 24px;
+		margin: 10px 10px 22px 10px;
+		padding: 0;
+		border: none;
+		background-image: url(../img/svg/listing.svg);
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: 24px 24px;
+	}
+	div#mobileView.subNavigation a.listing:hover,div#mobileView.subNavigation a.listing:target {
+		position: relative;
+		display: inline-block;
+		width: 24px;
+		height: 24px;
+		margin: 10px 10px 22px 10px;
+		padding: 0;
+		border: none;
+		background-image: url('../img/svg/listing-green.svg');
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: 24px 24px;	
+	}
+	div#mobileView.subNavigation a.glossary {
+		position: relative;
+		display: inline-block;
+		width: 24px;
+		height: 24px;
+		margin: 6px 10px 23px 10px;
+		padding: 0;
+		border: none;
+		background-image: url('../img/svg/glossary.svg');
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: 18px 18px;
+	}	
+	div#mobileView.subNavigation a.glossary:hover,div#mobileView.subNavigation a.glossary:target {
+		position: relative;
+		display: inline-block;
+		width: 24px;
+		height: 24px;
+		margin: 6px 10px 23px 10px;
+		padding: 0;
+		border: none;
+		background-image: url('../img/svg/glossary-green.svg');
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: 18px 18px;
+	}		
+	div#mobileView.subNavigation a.practicum {
+		position: relative;
+		display: inline-block;
+		width: 24px;
+		height: 24px;
+		margin: 6px 10px 23px 10px;
+		padding: 0;
+		border: none;
+		background-image: url('../img/svg/practicum.svg');
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: 20px 20px;
+	}
+	div#mobileView.subNavigation a.practicum:hover,div#mobileView.subNavigation a.practicum:target {
+		position: relative;
+		display: inline-block;
+		width: 24px;
+		height: 24px;
+		margin: 6px 10px 23px 10px;
+		padding: 0;
+		border: none;
+		background-image: url('../img/svg/practicum-green.svg');
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: 20px 20px;
+	}	
+	div#mobileView.subNavigation a.faq {
+		position:relative;
+		display:inline-block;
+		width: 24px;
+		height: 24px;
+		margin: 6px 10px 23px 10px;
+		padding: 0;
+		border: none;
+		background-image:url('../img/svg/question.svg');
+		background-position:center center;		
+		background-repeat:no-repeat;
+		background-size:20px 20px;
+	}
+	div#mobileView.subNavigation a.faq:hover,div#mobileView.subNavigation a.faq:target {
+		position:relative;
+		display:inline-block;
+		width: 24px;
+		height: 24px;
+		margin: 6px 10px 23px 10px;
+		padding: 0;
+		border: none;
+		background-image:url('../img/svg/question-green.svg');
+		background-position:center center;		
+		background-repeat:no-repeat;
+		background-size:20px 20px;
+	}	
+	div#lectureOne.introSlide span.lectureDate, div#lectureOne.introSlide span.lectureLocation, div#lectureOne.introSlide span.lectureLevel {
+		margin-top:10px;
+		margin-bottom:10px;
+	}
+	article.description div.textSlide div.columns div.column {
+		max-width: 200px !important;
+		width: 200px !important;
+		min-width: 180px !important;
+		margin-right: 10px;
+	}
+	section.content article.description img.contentsIllustration,section.content article.description img#recommendedLiterature.contentsIllustration {
+		max-width:320px !important;
+	}
+	div#literature.contentSlide {
+		padding-bottom: 150px;
+	}
+}

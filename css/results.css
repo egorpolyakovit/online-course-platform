@@ -1,0 +1,211 @@
+section#detailedResults.content article.description {
+    width: 100%;
+    max-width: 1000px;
+}
+section#detailedResults.content article.description div.totalResults {
+    display: block;
+    background: #f9f9f9;
+    padding: 0;
+}
+section#detailedResults.content article.description div.buttons {
+    display: block;
+    background: #f9f9f9;
+    padding: 10px 20px;
+}
+section#detailedResults.content article.description div.buttons a.btn {
+    display: block;
+    max-width: 118px;	
+    padding: 6px 12px 8px 12px;	
+    color: #111;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    text-shadow: 0 1px 1px #fff;
+    text-align: center;
+    background: #eeeeee;
+    background: -moz-linear-gradient(top, #eeeeee 0%, #e5e5e5 100%);
+    background: -webkit-linear-gradient(top, #eeeeee 0%,#e5e5e5 100%);
+    background: linear-gradient(to bottom, #eeeeee 0%,#e5e5e5 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#e5e5e5',GradientType=0 );
+    zoom: 85%;	
+}
+section#detailedResults.content article.description div.buttons a.btn:hover,section#detailedResults.content article.description div.buttons a.btn:target {
+	background:green;
+	border:1px solid green;
+	color:#fff;
+	text-shadow:none;
+}
+
+table.studentTotalResults tr td:first-child,table.studentTotalResults tr td:nth-child(2) {
+    width:130px;
+}
+table.studentTotalResults tr td:nth-child(2) {
+	padding-left:20px;
+}
+table.studentTotalResults tr td:nth-child(3) {
+    width: 130px;
+}
+table.studentTotalResults tr:not(:first-child) td:nth-child(4):after {
+    content: 'р.';
+    padding-left: 5px;
+}
+table.studentTotalResults tr:first-child td:nth-child(4) {
+    width: 95px;
+}
+table.studentTotalResults tr:first-child td:nth-child(5) {
+    width: 125px;
+}
+table.studentTotalResults tr:not(:first-child) td:nth-child(6):after {
+    display: inline-block;
+    padding-left: 5px;	
+    content: 'сертификат(ов)';
+}
+h2.studentResults {
+    margin: 12px 0 0 0;
+    padding: 5px 0 6px 0;
+    background-color: #4caf50;
+    font-weight: 600;
+    font-size: 15px !important;
+    text-align: center;
+    color: #fff;
+    border-radius: 3px 3px 0 0;
+}
+table.studentResults {
+    background: #f9f9f9;
+}
+table.studentResults tr:first-child {
+	font-size:12px;
+}
+table.studentResults tr:first-child td {
+    padding: 10px 0 10px 20px;
+    font-weight: 600;
+}
+table.studentResults tr, table.studentResults tr td {
+    font-size: 14px;
+}
+table.studentResults tr td:nth-child(3) a {
+    font-weight: 400;	
+    color: #000;
+    text-decoration: none;
+}
+table.studentResults tr td:first-child {
+    width: 200px;
+    padding: 5px 0 5px 20px;	
+    text-align: left;
+}
+table.studentResults tr:first-child td:nth-child(3),table.studentResults tr:first-child td:nth-child(4),table.studentResults tr:first-child td:nth-child(5),table.studentResults tr:first-child td:nth-child(6),table.studentResults tr:first-child td:nth-child(7),table.studentResults tr:first-child td:nth-child(8),table.studentResults tr:first-child td:nth-child(9) {
+    width: 130px;
+    font-size: 12px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+table.studentResults tr:first-child td:nth-child(5),table.studentResults tr:first-child td:nth-child(6),table.studentResults tr:first-child td:nth-child(7),table.studentResults tr:first-child td:nth-child(8),table.studentResults tr:first-child td:nth-child(9){
+	width:90px;
+}
+table.studentResults tr:not(:first-child) td:nth-child(3),table.studentResults tr:not(:first-child) td:nth-child(4),table.studentResults tr:not(:first-child) td:nth-child(5),table.studentResults tr:first-child td:nth-child(8) {
+    text-align: center;
+}
+table.studentResults tr td:nth-child(2) {
+    display: none;
+}
+table.studentResults tr:first-child {
+	background: #f9f9f9; /* Old browsers */
+	background: -moz-linear-gradient(top,  #f9f9f9 0%, #ededed 92%, #e7e6e6 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  #f9f9f9 0%,#ededed 92%,#e7e6e6 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  #f9f9f9 0%,#ededed 92%,#e7e6e6 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9f9f9', endColorstr='#e7e6e6',GradientType=0 ); /* IE6-9 */
+	color:#111;
+	border-bottom:1px solid #ededed;
+}
+table.studentResults tr:not(:first-child) td {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+table.studentResults tr:not(:first-child){
+	border-top:1px solid #fff;
+	border-bottom:1px solid #ececec;
+}
+table.studentResults tr:not(:first-child) td {
+    margin: 1px 0 1px 0;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #ececec;
+    text-align: center;
+    font-size: 13.5px;
+}
+table.studentResults tr:not(:first-child) td:nth-child(6) {
+	text-align:right;
+	padding-right:35px;
+}
+table.studentResults tr:not(:first-child) td:first-child,table.studentResults tr:not(:first-child) td:nth-child(7) {
+    text-align: left;
+}
+table.studentResults tr:not(:first-child) td:first-child {
+	font-weight:600;
+}
+table.studentResults tr:not(:first-child):hover {
+	background:#ececec;
+}
+table.studentResults tr:not(:first-child) td:nth-child(6):after {
+    display: inline-block;
+    content: '%';
+    padding-left: 3px;
+}
+table.studentResults tr:not(:first-child) td:nth-child(8),table.studentResults tr:not(:first-child) td:nth-child(9) {
+	font-size:12px;
+	font-weight:600;
+}
+table.studentResults tr:not(:first-child) td:nth-child(7),table.studentTotalResults tr:first-child td {
+    font-size: 13px;
+    font-weight: 600;
+}
+table.studentTotalResults {
+    padding: 10px 20px;	
+    font-size: 14px;
+}
+table.studentTotalResults tr:first-child td {
+    padding-bottom: 5px;
+}
+table.studentTotalResults tr:not(:first-child) td:nth-child(3):after {
+    content: 'студент(ов)';
+    display: inline-block;
+    padding-left: 5px;
+}
+table.studentTotalResults tr:not(:first-child) td:nth-child(5):after {
+    content: 'студент(ов)';
+    display: inline-block;
+    padding-left: 5px;	
+}
+input[type=button].printPage {
+    display: block;
+    width: 100%;
+    height: 35px;
+    padding: 6px 0 6px 0;
+    color: #444;
+    background: #f9f9f9;
+    background: -moz-linear-gradient(top, #f9f9f9 0%, #ededed 92%, #e7e6e6 100%);
+    background: -webkit-linear-gradient(top, #f9f9f9 0%,#ededed 92%,#e7e6e6 100%);
+    background: linear-gradient(to bottom, #f9f9f9 0%,#ededed 92%,#e7e6e6 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9f9f9', endColorstr='#e7e6e6',GradientType=0 );
+    font-family: Open Sans,Arial,sans-serif;
+    font-size: 13.5px;
+    font-weight: 600;
+    text-shadow: 0 1px 1px #fff;
+    text-align: center;
+    text-decoration: none;
+    border-top: 1px solid #ddd;
+	border-left:0;
+	border-right:0;
+	border-bottom:0;
+    border-radius: 0 0 5px 5px;
+    overflow: hidden;
+}
+input[type=button].printPage:hover,input[type=button].printPage:target {
+	color:green;
+	background:#ececec;
+    border-top: 1px solid #ddd;
+	border-left:0;
+	border-right:0;
+	border-bottom:0;	
+}

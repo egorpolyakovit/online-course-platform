@@ -1,0 +1,219 @@
+section.content article#login.description h1,section.content article#support.description h1#support {
+    padding: 10px 0 10px 0;
+    margin: 20px 0 0 0;
+    border-radius: 4px 4px 0 0;
+    border-top: 1px solid #ddd;
+    border-left: 1px solid #ececec;
+    border-right: 1px solid #ececec;
+    border-bottom: 1px solid #e4e4e4;	
+    background-color: #f3f3f3;
+    font-size: 16px;
+    font-weight: 600;
+    background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 1%, rgba(251,251,251,1) 51%, rgba(248,248,248,1) 100%);
+    background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,0) 1%,rgba(251,251,251,1) 51%,rgba(248,248,248,1) 100%);
+    background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(255,255,255,0) 1%,rgba(251,251,251,1) 51%,rgba(248,248,248,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#f8f8f8',GradientType=0 );
+}
+section.content article#login.description form#login {
+    display: block;
+    background-color: #f3f3f3;	
+    border-top: 1px solid #ddd;
+	border-radius:0 0 4px 4px;
+}
+section.content article#login.description form#login input.loginEmail {
+    background-image: url('../img/svg/fullname.svg');
+    background-size: 18px 18px;
+    background-repeat: no-repeat;
+    background-position: 98.5% 8px;
+}
+section.content article#login.description form#login input[type="password"] {
+    background-image: url('../img/svg/password.svg');
+    background-size: 18px 18px;
+    background-repeat: no-repeat;
+    background-position: 98.5% 8px;
+}
+section.content article#login.description form#login div.loginBox {
+	max-width: 420px;
+    padding: 20px 20px 0 20px;
+    margin: 0 auto 0 0;
+}
+section.content article#login.description form#login label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+section.content article#login.description form#login input.loginEmail, section.content article#login.description form#login input[type="password" i] {
+    display: block;
+    width: 100%;
+    max-width: 420px;
+    height: 36px;
+    padding: 3px 25px 4px 10px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    border: 1px solid #c5c5c5;
+    border-radius: 3px;
+}
+section.content article#login.description form#login input.btn {
+	display: block;
+    min-width: 160px;
+    height: 34px;
+    padding: 6px 12px 6px 12px;
+    background: #4caf50;
+    margin: 15px 0 0 1px;
+    border: 0;
+    border-radius: 3px;
+    color: #fff;
+    font-family: Open Sans,Arial,sans-serif;
+    font-size: 15px;
+    border: 1px solid green;
+}
+section.content article#login.description form#login input.btn:hover,section.content article#login.description form#login input.btn:target {
+    background: green;
+    border: 1px solid green;
+    color: #ececec;	
+}
+article#login.description div.loginRestorePass {
+    display: block;
+    width: 100%;
+    max-width: 420px;
+    padding: 10px 20px 0;
+    font-size: 13px;
+}
+section.content article#login.description div.loginRestorePass a {
+    float: right;
+    padding-left: 22px;	
+    color: #111;
+    text-decoration: none;
+    font-family: Open Sans,Arial,sans-serif;
+    font-size: 13px;
+    font-weight: 600;	
+    background-image: url(../img/svg/question.svg);
+    background-size: 14px 14px;
+    background-repeat: no-repeat;
+    background-position: 2px 3px;
+}
+section.content article#login.description div.loginRestorePass a:hover,section.content article#login.description div.loginRestorePass a:target {
+    color: green;
+    text-decoration: none;
+    font-family: Open Sans,Arial,sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+    padding-left: 22px;
+    background-image: url('../img/svg/question-green.svg');
+    background-size: 14px 14px;
+    background-repeat: no-repeat;
+    background-position: 2px 3px;
+}
+section.content article#login.description form#login div.loginRestorePass label {
+    display: inline-block;
+    width: 50%;
+    max-width: 160px;
+	cursor:pointer;
+}
+article#login.description form#login label span {
+    display: inline-block;
+    padding: 3px;
+    line-height: 1em;
+    font-size: 13px;
+    vertical-align: top;
+}
+article#login.description form#login label span i {
+	font-style:normal;
+}
+article#login.description form#login div.loginBox.button {
+    padding-top: 10px !important;
+    padding-bottom: 30px !important;
+}
+div.capture {
+    display: block;
+}
+div.capture img {
+    display: inline-block;	
+    height: 34px;
+    margin-top: 2px;
+    margin-right: 5px;	
+    border: 1px solid #c5c5c5;
+    border-radius: 3px;
+    vertical-align: top;
+}
+div.capture input[type="text"] {
+    display: inline-block;
+    width: 150px;
+    height: 36px;
+    margin-top: 2px;
+    padding: 0 0 0 10px;
+    font-size: 15px;
+    border: 1px solid #c5c5c5;
+    border-radius: 3px;
+}
+@media (max-width:640px) {
+	section.content article#login.description form#login div.loginRestorePass label {
+		float:left;
+		display: inline-block;
+		width: 50%;
+		max-width: 120px;
+		cursor: pointer;
+	}	
+	section.content article#login.description div.loginRestorePass a {
+		float:left;
+	}	
+	article#login.description form#login label span i {
+		display:none;
+	}
+	section.content article#login.description form#login div.loginBox {
+		max-width: 420px;
+		padding: 20px 20px 0 20px;
+		margin: 15px auto 0 0;
+	}
+	form#support.feedback {
+		max-width: calc(100% - 80px);
+		display: block;
+		margin: 0px 0px 50px;
+		padding: 20px;
+		background-color: rgb(245, 245, 245);
+		border: 1px solid #ececec;
+		border-radius: 0 0 4px 4px;
+	}
+	form#support.feedback input, form#support.feedback select, form#support.feedback textarea {
+		width: 100% !important;
+		border: 1px solid #cecece;
+		background: #ffffff;
+		border-radius: 3px;
+		padding: 10px;
+		font-size: 14px;
+		margin-bottom: 15px;
+	}
+}
+@media (min-width:768px) {
+	form#support.feedback {
+		max-width: calc(100% - 80px);
+		display: block;
+		margin: 0px 0px 50px;
+		padding: 20px;
+		background-color: rgb(245, 245, 245);
+		border: 1px solid #ececec;
+	}		
+}
+@media (max-width:999px) and (min-width:768px) {
+	form#support.feedback input, form#support.feedback select, form#support.feedback textarea {
+		min-width: 100% !important;
+		width: 100% !important;
+		max-width: 100% !important;
+	}
+}
+@media (min-width:1000px) {
+	form#support.feedback,article#support.description h1#support {
+		max-width: 625px;
+	}
+	article#support.description h1#support {
+		max-width: 665px;
+	}
+	form#support.feedback {
+		display: block;
+		margin: 0px 0px 50px;
+		padding: 20px;
+		background-color: rgb(245, 245, 245);
+		border: 1px solid #ececec;
+	}
+}
