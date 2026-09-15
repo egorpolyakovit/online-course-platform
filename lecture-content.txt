@@ -1,0 +1,85 @@
+<div class="lecture" id="lectureOne">
+	<div class="introSlide" id="lectureOne">	
+		<span class="indicator">Лекция №1</span>
+		<h1>Введение в основы SVG графики</h1>
+		<p class="lectureAuthor">Автор: <a href="author.html" title="Автор курса лекций Егор Юрьевич Поляков">Е.Ю.Поляков</a></p>
+		<span class="lectureDate">Актуальность: Ноябрь 2020 г.</span>		
+		<span class="lectureLocation">Санкт-Петербург, Россия</span>
+		<span class="lectureLevel">Начальный уровень</span>
+		<span class="lectureLevel">Для студентов I курса</span>		
+	</div>
+	<div class="contentSlide">
+		<h2>Содержание лекции</h2>
+		<intro>Первая лекция представляет аспекты применения векторной графики в&nbsp;практических направлениях деятельности.</intro>		
+		<h3>Темы лекции</h3>
+		<ul>
+			<li>
+				<a href="#topic1" title="Применение векторной графики в сферах деятельности">Применение векторной графики в сферах деятельности</a>
+				<ul>
+					<li><a href="#topic1-1" title="Архитектура">Архитектура</a></li>
+					<li><a href="#topic1-2" title="Брендирование и реклама">Брендирование и реклама</a></li>
+					<li><a href="#topic1-3" title="Верстка и иллюстрирование">Верстка и иллюстрирование</a></li>
+					<li><a href="#topic1-4" title="Городская навигация">Городская навигация</a></li>
+					<li><a href="#topic1-5" title="Гравировка на металле, дереве, пластике">Гравировка на металле, дереве, пластике</a></li>
+					<li><a href="#topic1-6" title="ИТ: веб-интерфейсы">ИТ: веб-интерфейсы</a></li>	
+					<li><a href="#topic1-7" title="Картография">Картография</a></li>
+					<li><a href="#topic1-8" title="Полиграфия">Полиграфия</a></li>						
+				</ul>			
+			</li>
+			<li><a href="#topic2" title="Профессиональные графические редакторы">Профессиональные графические редакторы</a></li>
+			<li><a href="#topic3" title="Терминология">Терминология</a></li>
+			<li>
+				<a href="#topic4" title="Операции с векторной графикой">Операции с векторной графикой</a>
+				<ul>
+					<li><a href="#topic4-1" title="Трассировка">Трассировка</a></li>
+					<li><a href="#topic4-2" title="Оптимизация">Оптимизация</a></li>
+					<li><a href="#topic4-3" title="Стилизация">Стилизация</a></li>
+					<li><a href="#topic4-4" title="Предпечатная подготовка PrePress">Предпечатная подготовка PrePress</a></li>				
+				</ul>
+			</li>
+			<li><a href="#literature" title="Рекомендуемая литература">Рекомендуемая литература</a></li>			
+		</ul>
+	</div>	
+	<div class="contentSlide" id="topic1">
+		<h2>Применение векторной графики в сферах деятельности</h2>
+		<p>Векторная графика имеет широкое распространение в&nbsp;повседневной жизни для&nbsp;решения гражданских и&nbsp;промышленных целей.</p>
+		<p>В&nbsp;следующей таблице представлены наиболее популярные сферы применения векторной графики.</p>
+		<table width="100%" height="auto" border="0" class="tableOne">
+			<td valign="top" width="300px">
+				<p><strong>Архитектура</strong></p>
+			</td>
+			<td valign="top" width="300px">
+				<p><strong>Брендирование и реклама</strong></p>
+			</td>
+			<td valign="top" width="300px">
+				<p><strong>Верстка и иллюстрирование</strong></p>
+			</td>
+			<td valign="top" width="300px">
+				<p><strong>Городская навигация</strong></p>
+			</td>
+			<td valign="top" width="300px">
+				<p><strong>Гравировка</strong></p>
+			</td>
+			<td valign="top" width="300px">
+				<p><strong>ИТ: Веб-интерфейсы</strong></p>
+			</td>
+			<td valign="top" width="300px">
+				<p><strong>Картография</strong></p>
+			</td>
+			<td valign="top" width="300px">
+				<p><strong>Полиграфия</strong></p>
+			</td>
+		</table>
+		<small align="center">Табл.1. Направления применения векторной графики</small>
+	</div>
+	<div class="contentSlide" id="topic1-1">
+		<h2>Архитектура</h2>
+		<p>На практике для решения задач архитектуры по строительству гражданских и промышленных зданий применяются специализированные пакеты инженерной векторной графики Autocad и т.д.</p>
+		<p class="illustration">
+			<img src="img/lectures/lecture-one/autocad.png" border="0" alt="Рис.1. Архитектурное 3D моделирование в программном обеспечении." title="Рис.1. Архитектурное 3D моделирование в программном обеспечении.">
+			<small align="center">Рис.1. Архитектурное 3D моделирование в программном обеспечении.</small>
+		</p>
+	</div>
+</div>
+
+
