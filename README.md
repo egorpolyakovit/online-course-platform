@@ -11,6 +11,7 @@ The project demonstrates a custom PHP/JavaScript educational website with course
 - HTML5
 - CSS3
 - CSV-based data processing
+- SVG
 
 ## Main modules
 
