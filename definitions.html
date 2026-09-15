@@ -1,0 +1,336 @@
+<html>
+	<head>
+		<title>Термины и определения по курсу векторной графики</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">		
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/menu.css">
+		<link rel="stylesheet" href="css/popup.css">		
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+		<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<link href="css/filters.css" rel="stylesheet" type="text/css">
+		<script src="js/jquery-min.js"></script>
+		<script src="js/jquery-isotopemin.js"></script>
+	</head>
+	<body>
+		<header>
+			<a href="/" class="logo" title="Курс дистанционного обучения"></a>
+
+			<a href="#searchForm" class="search" title="Поиск по курсу">Поиск по курсу</a>
+			<a href="login.php" class="login" title="Авторизация студентов">Войти</a>
+			<nav id="navigation" aria-label="Menu">
+				<label for="toggle-mobile-menu" aria-label="Menu"></label>
+				<input id="toggle-mobile-menu" type="checkbox">
+				<ul id="main-menu">
+					<li><a href="about.html" class="parentURL" title="О курсе">О курсе</a></li>
+					<li><a href="rules.html" class="childURL" title="Правила дистанционного обучения">Правила обучения</a></li>					
+					<li><a href="author.html" class="childURL" title="Автор курса обучения">Автор курса</a></li>					
+					<li><a href="plan.html" class="childURL" title="План курса обучения">План курса обучения</a></li>
+					<li><a href="calendar.html" class="childURL" title="Календарный план курса обучения">Календарный план</a></li>		
+					<li><a href="#" class="parentURL" title="Методические материалы">Методические материалы</a></li>
+					<li><a href="definitions.html" class="childURL" title="Термины и определения">Термины и определения</a></li>				
+					<li><a href="literature.html" class="childURL" title="Литература">Литература</a></li>
+					<li><a href="video.html" class="childURL" title="Видео материалы">Видео материалы</a></li>	
+					<li><a href="additional.html" class="childURL" title="Сопутствующие материалы">Сопутствующие материалы</a></li>				
+					<li><a href="lectures.html" class="parentURL" title="Лекции">Лекции</a></li>
+					<li><a href="practicums.html" class="parentURL" title="Практикумы">Практикумы</a></li>
+					<li><a href="tasks.html#practicum" class="childURL" title="Практикумы">Домашние задания</a></li>
+					<li><a href="practice-tasks.html" class="childURL" title="Выполненные задания">Выполненные задания</a></li>					
+					<li><a href="plan.html#examination" class="parentURL" title="Аттестация по курсу обучения">Аттестация</a></li>
+					<li><a href="rules.html#examination" class="childURL" title="Правила проведения экзамена">Правила проведения экзамена</a></li>
+					<li><a href="tasks.html#examination" class="childURL" title="Задания для экзамена">Задания для экзамена</a></li>
+					<li><a href="upload.php" class="childURL" title="Загрузка решения по экзамену">Загрузка решения по&nbsp;экзамену</a></li>
+					<li><a href="results.php" class="childURL" title="Результаты экзамена">Результаты экзамена</a></li>
+					<li><a href="support.php" class="parentURL" title="Техническая поддержка">Техническая поддержка</a></li>					
+					<li><a href="feedback.php" class="childURL" title="Обратная связь">Обратная связь</a></li>
+				</ul>
+			</nav>
+		</header>
+		<nav class="sideMenu">
+			<div class="courseTitle">
+				<a href="about.html">Введение в&nbsp;векторную&nbsp;графику</a>
+				<small>Адаптация для&nbsp;студентов I&nbsp;курса</small>
+			</div>
+			<ul class="mainSections">
+				<li>
+					<a href="plan.html#lections" id="lection">
+						<b>Лекции</b><i>10</i>
+					</a>
+				</li>
+				<li>
+					<a href="plan.html#practicums" id="practicum">
+						<b>Практикумы</b><i>10</i>
+					</a>
+				</li>
+				<li>
+					<a href="tasks.html#practicum" id="tasks">
+						<b>Задания</b><i>10</i>
+					</a>
+				</li>				
+				<li>
+					<a href="plan.html#examination" id="exam">
+						<b>Аттестация</b>
+					</a>
+				</li>					
+			</ul>
+			<div class="copyright">
+				<span class="copyright">2020 &copy; Курс дистанционного обучения «Введение&nbsp;в&nbsp;векторную&nbsp;графику»</span>
+				<span class="notice"><i></i>Все материалы только для&nbsp;обучения студентов в&nbsp;учебно-методическом процессе.</span>
+			</div>
+		</nav>
+		<section class="content">
+			<article class="description">
+				<h1>Термины и определения</h1>
+				<script>$(function(){$("input#search").on("input",function(){var a=$(this).val().toLowerCase();if(a.length<=2){$("ul#search li").show()}else{$("ul#search li").each(function(){if($(this).text().toLowerCase().indexOf(a)<0){$(this).hide()}})}})});</script>
+				<input id="search" value="" placeholder="Найти термин и определение" size="20" class="" autocomplete="off">
+				<script>
+					$(document).ready(function() {
+							$('.definitions').isotope({
+								itemSelector: '.definition'
+							});
+
+							$('#filter a').click(function(){
+							
+								$('#filter a').removeClass('current');
+								$(this).addClass('current');
+								var selector = $(this).attr('data-filter');
+								
+								$('.definitions').isotope({
+									filter: selector,
+									animationOptions: {
+										duration: 1000,
+										easing: 'easeOutQuart',
+										queue: false
+									}
+								});
+								return false;
+
+							});
+
+					});
+				</script>				
+				<ul class="clearfix button-group filter-button-group" id="filter">
+					<li><a class="current" data-filter="*">Все<span class="hidden">&nbsp;термины</span></a></li>
+					<li><a data-filter=".design">Дизайн</a></li>
+					<li><a data-filter=".svg"><span class="hidden">Формат </span>SVG</a></li>
+					<li><a data-filter=".marketing">Маркетинг</a></li>
+					<li><a data-filter=".web">Веб<span class="hidden"> разработка</span></a></li>
+				</ul>
+				<ul class="definitions" id="search">
+					<li class="definition design web">
+						<p><b>Адаптивная верстка</b> — это технический способ описания кода веб-страниц в формате HTML с применением каскадных таблиц стилей CSS с целью адаптирования содержания (контента)
+						страниц под размеры экрана клиентского устройства (пользователя).</p>
+						<p>При подготовке дизайна для адаптивной верстки зачастую применяют векторную графику в формате SVG, удобную для отображения графики на экранах высокой четкости (Retina).</p>
+					</li>	
+					<li class="definition design web">
+						<p><b>Ба́зис</b> <em>(др.-греч. βάσις «основа»)</em> — это упорядоченный (конечный или бесконечный) набор векторов в векторном пространстве, такой, что любой вектор этого пространства может быть единственным образом представлен в виде линейной комбинации векторов из этого набора.</p>
+					</li>
+					<li class="definition design web">
+						<p><b>Базис векторного пространства</b> — это совокупность линейно независимых векторов, упорядоченная и в своей численности равная размерности пространства.</p>
+					</li>					
+					<li class="definition design marketing">
+						<p><b>Брендирование</b> — это комплекс задач маркетинга, направленный на создание устойчивого запоминаемого торгового знака и фирменного стиля для выпускаемой продукции. Происходит от слова «brand» (товарный знак, торговая марка).</p>
+					</li>
+					<li class="definition design web" id="bem">
+						<p><b>БЭМ</b> <em>(применяется в верстке и веб-разработке)</em> - это методология стандартизации кода продукта, основанная на единой нотации для всех структурных единиц продукта (нтерфейсных библиотек, фреймворков и вспомогательных инструментов).</p>
+					</li>
+					<li class="definition design web">
+						<p><b>Верстка</b> — это технический структурный стандартизированный монтаж оригинал-макета из ряда элементов: заголовков, текста, примечаний, таблиц, иллюстраций и т.д.</p>
+					</li>					
+					<li class="definition design svg">
+						<p><b>Вектор</b> <em>(в геометрии)</em> — это базовая геометрическая фигура (направленный отрезок прямой), описанная начальной точкой и отрезком, направленным под заданным углом к оси OX. Вектор описывает фигуру в двухмерном пространстве (OX;OY).</p>
+					</li>
+					<li class="definition design svg">
+						<p><b>Генератор SVG файлов</b> — это автоматизированный скрипт (программа) для вставки фонов для векторных глифов.</p>
+						<p>Генератор SVG изображений позволяет увеличить скорость рутинной обработки файлов в техническом процессе дизайна.</p>
+					</li>
+					<li class="definition design svg">
+						<p><b>Глиф</b> <em>(в полиграфии и иллюстрировании)</em> — элемент письма, конкретное графическое представление графемы, иногда нескольких связанных графем — составной глиф, — или только части графемы, например — диакритический знак.</p>
+						<p>Глиф (от греч. γλύφω «вырезаю; гравирую») — базовый элемент графического дизайна.</p>
+					</li>
+					<li class="definition design svg">
+						<p><b>Кривая Безье</b> <em>(в&nbsp;полиграфии, иллюстрировании)</em> — параметрическая изогнутая кривая определяется массивом точек и&nbsp;задается векторным уравнением:</b></p>
+						<p align="center"><img src="img/svg/curve-bezie.svg" alt="Формула описания кривой Безье" align="center" border="0" width="240px" height="auto"></p>
+						<p><small>где <b>P<sub>k</sub></b> — контрольные точки, определяющие форму сплайна Безье,<br>
+						<b>b<sub>n, k</sub>(<em>t</em>)</b> — базисные функции кривой Безье, называемые также полиномами Бернштейна.</small></p>
+					</li>
+					<li class="definition design svg">
+						<p><b>Линия</b> <em>(от англ. line)</em> — вектор с начальной и конечной точками.</p>
+					</li>		
+					<li class="definition design marketing">
+						<p><b>Логоти́п</b> <em>(от др.-греч. λόγος — слово + τύπος — отпечаток)</em> — графический знак, применяемый как визуальный идентификатор государственной, коммерческой или общественной организации для улучшения узнаваемости и распознаваемости в социуме.</p>
+						<p>Логотип представляет собой название определенной сущности, которую он визуально идентифицирует, в виде стилизованных букв, фирменного знака или идеограммы. Логотипы широко применяются в качестве товарных знаков.</p>
+					</li>					
+					<li class="definition design svg" id="monogramm">
+						<p><b>Моногра́мма</b> <em>(греч. μόνος «один» + γραμμα «буква»)</em> — знак, составленный из соединённых между собой, поставленных рядом 
+						или переплетённых одна с другой начальных букв имени и фамилии или же из сокращения целого имени.</p>
+						<p>Для четкого изображения монограммы применяют векторный глиф, что позволяет передать точную детализацию при&nbsp;максимальном и минимальном масштабе.</p>
+					</li>
+					<li class="definition design">
+						<p><b>Модульная сетка</b> <em>(от англ. module grid)</em> — это визуальное пошаговое разделение двумерного пространства на равные шапки (ячейки) с целью четкого разграничения (верстки) модулей в дизайн-макете.</p>
+					</li>
+					<li class="definition design svg">
+						<p><b>Модульная система верстки</b> — условная система верстки многостраничных макетов и производных изданий (от первоисточника, например по фирменному стилю).</p>
+						<p>Основа композиции полос и разворотов — модульная сетка с заданным шагом (модулем) деления по осям OX и OY.</p>
+						<p>Технический дизайн значительно упрощается при внедрении модульной сетки на этапе проектирования прототипов страниц.</p>
+					</li>
+					<li class="definition design svg">					
+						<p><b>Отступы</b> <em>(в модульной сетке в отношении к верстке)</em> — это отрезки внутреннего или внешнего отделения объектов (форм) от краев блока.</p>
+						<p>На практике применяются внешние отступы (margin) и внутренние отступы (padding) для верстки технического дизайна.</p>					
+					</li>
+					<li class="definition design svg">
+						<p><b>Полигон</b> <em>(в картографии)</em> — специально отведённый государством и оборудованный участок местности, воздушной или морской поверхности (участок суши, неба или моря).</p>
+						<p>В картографии полигоны (замкнутые фигуры сложной формы) применяются для отображения от малых до крупных географических территорий (от садового участка до границ городов, регионов и стран).</p>
+					</li>					
+					<li class="definition design marketing">
+						<p><b>Реклама</b> — вид маркетинга для привлечения внимания к объекту рекламирования для повышения внимания и получения коммерческой выгоды (повышение спроса, продажи).</p>
+					</li>
+					<li class="definition design web" id="rasterize">					
+						<p><b>Растеризация</b> <em>(от англ. Rasterisation, Rasterization, в графическом и веб-дизайне)</em> — это операция приведения кода изображения из векторного вида к растровому, точнее к пиксельному (в виде точек) в заданном количестве точек на дюйм.</p>
+						<p>Применяется для вывода изображений на принтер и т.д.</p>
+					</li>
+					<li class="definition design web" id="pictogramm">
+						<p><b>Пиктограмма</b> — это семантический знак, отражающий черты объекта, предмета или явления, на которые он указывает, в схематическом виде.</p>
+						<p>В настоящее время пиктограммы имеют узкоспециальную и второстепенную роль. На практике применяются пиктограммы из таблицы Unicode.</p>
+					</li>					
+					<li class="definition design svg">
+						<p><b>Препресс</b> <em>(от англ. PrePress)</em> — это технический процесс предпечатной подготовки макетов по&nbsp;требованию типографии в&nbsp;соответствии со&nbsp;спецификацией
+						печатной машины (например палитра CMYK, разрешение графики 300 точек на дюйм и т.д.)</p>
+					</li>
+					<li class="definition design svg">
+						<p><b>Семиотика</b> <em>(точнее семиоло́гия)</em> — это наука, исследующая свойства знаков и знаковых систем.</p>
+						<p>Семиотика имеет значение для&nbsp;определения визуальных символов (глифов) в контексте применения для дизайна логотипа, герба, точек интересов POI и т.д.</p>
+					</li>	
+					<li class="definition design web">
+						<p><b>Сжатый SVG</b> <em>(точнее SVGz)</em> — это оптимизированный код SVG с применением сжатия gzip, а полученному файлу присваивают расширение «.svgz».</p>
+						<p>Формат SVG доступен для сжатия, поскольку это текстовый XML-документ, имеющий регулярную структуру.</p>
+					</li>					
+					<li class="definition design">
+						<p><b>Стилизация изображения</b> — техническая процедура приведения макета к заданному стилю (например, по техническому заданию стилизация графики к стилю Material Design).</p>
+						<p>Базовое требование для исполнения на стороне дизайнера (работа с векторными файлами макетов).</p>
+					</li>
+					<li class="definition design svg" id="tableUnicode">
+						<p><b>Таблица Юникод</b> <em>(от англ. Unicode)</em> — это стандартная таблица для&nbsp;кодирования специальных символов в форматах HTML, текстовых документах TXT, DOC и т.д.</p>
+					</li>					
+					<li class="definition design">
+						<p><b>Точки интересов</b> <em>(от англ. points of interests)</em> — это условное географические точки на карте местности для отображения объектов инфраструктуры.</p>
+						<ul>
+							<li>Точки POI имеют точные GPS-координаты.</li>
+							<li>Тип точки.</li>
+							<li>Дополнительная информация (по содержанию объекта).</li>
+						</ul>
+					</li>
+					<li class="definition design marketing">
+						<p><b>Торговый знак</b> <em>(от англ. trade mark — дословное «торговая марка»)</em> — зарегистрированный фирменный знак, определяющий классы использования продукции с данным определителем (знаком) в коммерческом использовании (используется для брендирования в продажах).</p>
+						<p>Характерное обозначение торгового знака в угловом начертании ТМ (сокр. от Trade Mark), используется для маркировки юридических прав владельца на использование фирменного знака.</p>
+					</li>					
+					<li class="definition design svg">
+						<p><b>Трасcировка</b> <em>(от англ. tracing)</em> — это&nbsp;цифровое преобразование растрового (точечного) изображения в&nbsp;векторный формат воспроизведения графики.</p>
+					</li>
+					<li class="definition design svg">				
+						<p><b>Узловая точка</b> — особая точка кривой для отображения углов кривой Безье, векторной фигуры и линейного вектора.</p>
+					</li>
+					<li class="definition design svg">						
+						<p><b>Шаг</b> <em>(в модульной сетке в отношении к верстке)</em> — это условная единица (иначе модуль) для разметки модульной сетки дизайн-макета.</p>
+					</li>						
+					<li class="definition design web">
+						<p><b>Эффект SVG маски</b> <em>(от англ. mask SVG)</em> — это технический визуальный эффект в веб и графическом дизайне.</p>
+						<p>Эффект SVG маски применяется наложением на фото или фон с целью обрамления или вырезания символа или орнамента поверх изображения.</p>
+					</li>					
+					<li class="definition design svg">
+						<p><b>Фигура</b> <em>(от англ. figure)</em> — замкнутая ломаная с более, чем двумя точками.</p>
+					</li>
+					<li class="definition design">
+						<p><b>Функция Zoom</b> — функция мобильных устройств, адаптированная для приближения и удаления в масштабе изображения на экране мобильного устройства или планшета.</p>
+					</li>
+					<li class="definition design marketing" id="abTest">
+						<p><b>A/B тест</b> <em>(применяется в маркетинге)</em> — базовый инструмент маркетинга, наиболее практичный способ решения задачи отбора лучшего варианта при условии краткого срока на утверждение (применительно к дизайну логотипа и других рекламных носителей).</p>
+					</li>					
+					<li class="definition design web">
+						<p><b>CSS</b> <em>(сокр. от Cascading Style Sheets, используется аббривеатура CSS)</em> — каскадные таблицы стилей, применяемые в верстке HTML шаблонов, с применением наследования стилей в иерархической структуре кода HTML.</p>
+						<p>Применяется также для анимации SVG элементов дизайна веб-страниц (HMTL).</p>
+					</li>
+					<li class="definition design web">
+						<p><b>Path</b> — это базовая конструкция в описании векторного формата SVG для моделирования фигур (замкнутых кривых) в двумерном пространстве (X;Y).</p>
+					</li>	
+					<li class="definition design marketing">
+						<p><b>Retina</b> <em>(в переводе с лат. — «сетчатка»)</em> — наименование технологии на&nbsp;сетки пикселей с высокой четкостью изображения (300 точек на дюйм).</p>
+						<p>Применяется для ЖК и OLED дисплеев компьютеров, мобильных устройств, планшетов и плазменных панелей.</p>
+					</li>						
+					<li class="definition design">
+						<p><b>SMIL</b> — это язык разметки для создания интерактивных мультимедийных презентаций.</p>
+						<p>SMIL — это технология анимации графических элементов в векторном формате SVG.</p>
+						<p>Векторная графика в формате SVG по стандарту консорциума W3C поддерживается для анимации с использованием базовой спецификации SMIL.</p>
+						<p>В дополнение к элементам анимации, определенным в спецификации SMIL, формат SVG включает расширения, совместимые со спецификацией анимации SMIL; эти расширения включают атрибуты, расширяющие функциональность элемента <animateMotion> и дополнительных элементов анимации.</p>
+					</li>	
+					<li class="definition design svg">
+						<p><b>SVG</b> <em>(сокр. от Scalable Vector Graphics)</em> — это популярный формат для хранения, обработки и применения векторной графики. Формат SVG имеет широкое применение в различных направлениях деятельности.</p>
+					</li>					
+					<li class="definition marketing">
+						<p><b>WIPO</b> <em>(в переводе с англ. «Всемирной организации интеллектуальной собственности»)</em> — это международная организация, владеющая классификацией актуальных зарегистрированных торговых знаков.</p>
+					</li>
+				</ul>
+			</article>
+			<article class="materials">
+				<h2>Методические материалы</h2>
+				<ul>
+					<li class="definitions"><a href="definitions.html">Термины и определения</a></li>				
+					<li class="literature"><a href="literature.html">Рекомендуемая литература</a></li>
+					<li class="video"><a href="video.html">Видео материалы</a></li>	
+					<li class="additional"><a href="additional.html">Сопутствующие материалы</a></li>				
+				</ul>
+			</article>
+			<div class="sectionNav">
+				<a href="plan.html" class="educationPlan" title="Перейти к плану обучения">План обучения</a>
+				<a href="examination.html" class="educationExam" title="Перейти к описанию экзамена">Экзамен по курсу</a>			
+			</div>
+		</section>
+		<div id="searchForm" class="fade">
+			<div class="popup">
+				<div class="header">
+					<h2>Поиск по курсу</h2>
+					<a href="#" class="close"></a>
+				</div>
+				<div class="content">
+					<script>$(function(){$("input#searching").on("input",function(){var a=$(this).val().toLowerCase();if(a.length<=2){$("ul#searching li").show()}else{$("ul#searching li").each(function(){if($(this).text().toLowerCase().indexOf(a)<0){$(this).hide()}})}})});</script>
+					<input id="searching" value="" placeholder="Найти материал в курсе" size="20" class="" autocomplete="off">
+					<ul class="course" id="searching">
+						<li><a href="about.html" title="Описание курса векторной графики">Описание курса «Введение в векторную графику»</a></li>
+						<li><a href="plan.html" title="План курса обучения">План курса обучения</a></li>
+						<li><a href="methodic-materials.html" title="Методические материалы">Методические материалы</a></li>
+						<li><a href="definitions.html" title="Термины и определения">Термины и определения</a></li>
+						<li><a href="literature.html" title="Рекомендованная литература">Рекомендованная литература</a></li>
+						<li><a href="lectures.html" title="Лекции">Лекции</a></li>
+						<li><a href="lecture-1.html" class="lection">Лекция №1. Введение в основы SVG графики</a></li>
+						<li><a href="lecture-2.html" class="lection">Лекция №2. Моделирование объектов в SVG графике</a></li>
+						<li><a href="lecture-3.html" class="lection">Лекция №3. Основные принципы дизайна логотипов на основе векторной графики</a></li>
+						<li><a href="lecture-4.html" class="lection">Лекция №4. Программные решения для работы с векторной графикой</a></li>
+						<li><a href="lecture-5.html" class="lection">Лекция №5. Применение векторной SVG графики для полиграфии</a></li>
+						<li><a href="lecture-6.html" class="lection">Лекция №6. Система стандартизации бизнес-процессов с применением SVG графики</a></li>
+						<li><a href="lecture-7.html" class="lection">Лекция №7. Применение SVG графики для веб-разработки</a></li>
+						<li><a href="lecture-8.html" class="lection">Лекция №8. Дизайн векторной графики для приложений на платформах PC, iOS, Android</a></li>
+						<li><a href="lecture-9.html" class="lection">Лекция №9. Коммерческая SVG графика: применение в цифровых маркетплейсах</a></li>
+						<li><a href="lecture-10.html" class="lection">Лекция №10. Векторная графика для решения задач навигации и картографии</a></li>						
+						<li><a href="practicums.html" title="Практикумы">Практикумы</a></li>
+						<li><a href="practicum-1.html" class="practicum">Практикум №1. Применение SVG графики для инженерных задач</a></li>
+						<li><a href="practicum-2.html" class="practicum">Практикум №2. Урок инженерного моделирования базовых фигур в графических редакторах, коде SVG документов (с учетом детализации и масштабирования)</a></li>
+						<li><a href="practicum-3.html" class="practicum">Практикум №3. Отрисовка векторных логотипов с учетом базовых требований дизайна</a></li>
+						<li><a href="practicum-4.html" class="practicum">Практикум №4. Применение программ Adobe Illustrator, Corel Draw, SVG Generator для отрисовки сложной SVG графики</a></li>
+						<li><a href="practicum-5.html" class="practicum">Практикум №5. Верстка шаблонов и иллюстрирование страниц для классических книг</a></li>
+						<li><a href="practicum-6.html" class="practicum">Практикум №6. Разработка каталога продукции по методологии БЭМ</a></li>
+						<li><a href="practicum-7.html" class="practicum">Практикум №7. Верстка анимированной страницы HTML с применением JavaScript анимации</a></li>
+						<li><a href="practicum-8.html" class="practicum">Практикум №8. Применение формата SVG  для дизайна приложений.</a></li>	
+						<li><a href="practicum-9.html" class="practicum">Практикум №9. Основы отрисовки коммерческой графики для продаж в маркетплейсах</a></li>
+						<li><a href="practicum-10.html" class="practicum">Практикум №10. Верстка схем городской навигации</a></li>	
+						<li><a href="plan.html#examination" title="Аттестация">Аттестация</a></li>						
+						<li><a href="rules.html" title="Правила экзамена">Правила проведения экзамена</a></li>
+						<li><a href="tasks.html" title="Задания для экзамена">Задания для экзамена</a></li>
+						<li><a href="upload.php" title="Загрузка задания на экзамене">Загрузка задания на экзамене</a></li>								
+						<li><a href="results.php" title="Результаты экзамена">Результаты экзамена</a></li>
+					</ul>
+				</div>
+				<div class="mateBottomCorner"></div>
+			</div>
+		</div>		
+	</body>
+</html>
